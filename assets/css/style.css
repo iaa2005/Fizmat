@@ -1,0 +1,501 @@
+body {
+    margin: 0;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #343742;
+    text-decoration: none;
+}
+h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #343742;
+    letter-spacing: 0.5px;
+}
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #343742;
+    letter-spacing: 0.5px;
+}
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #343742;
+    letter-spacing: 0.5px;
+}
+.title-header {
+    padding-left: 100px;
+    padding-top: 70px;
+    padding-bottom: 130px;
+    padding-right: 130px;
+    width: auto;
+    display: grid;
+}
+.title-text {
+    font-size: 21px;
+    font-weight: 500;
+}
+.logo {
+    width: min(475px, 65vw);
+    margin-bottom: 30px;
+}
+.telegram-button {
+    margin-top: 10px;
+    width: fit-content;
+    border-radius: 50px;
+    height: fit-content;
+    background-color: #343742;
+    border: solid 3px #343742;
+    display: inline-flex;
+    transition: 0.3s;
+}
+.telegram-button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 3px #343742;
+    cursor: pointer;
+}
+.telegram-button:hover .button-text {
+    color: #343742;
+}
+.button-text {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 18px;
+    margin: 11px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+.arrow-right {
+    height: 21px;
+    margin-left: 10px;
+    transition: 0.3s;
+    position: absolute;
+}
+.big-menu {
+    background-color: rgb(241 241 243);
+    background-size: 500px;
+    padding: 150px 100px;
+}
+.table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+}
+.table-in {
+    height: 350px;
+    width: -webkit-fill-available;
+    border: 0px solid #adb1b6;
+    transition: 0.3s;
+    padding: 0;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    background-color: white;
+    border-radius: 21px;
+    box-shadow: 0px 0px 20px 0px #efefef;
+}
+.table-in:hover {
+    box-shadow: 0px 0px 20px 0px #d3d3d3;
+    cursor: pointer;
+}
+.table-in:hover .arrow-right {
+    margin-left: 20px;
+}
+.table-in-item {
+    padding: 15px 30px 30px;
+    display: grid;
+}
+.button-menu {
+    padding: 20px 30px 25px;
+    margin-top: auto;
+    height: fit-content;
+    width: -webkit-fill-available;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    transition: 0.3s;
+    color: #343742;
+}
+.h-table-2 {
+    font-weight: 300;
+    line-height: 24px;
+}
+footer {
+    padding: 75px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #adb1b6;
+}
+.support-text {
+    font-weight: 300;
+    font-size: 18px;
+    color: #adb1b6;
+}
+.iaa2005-link {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 18px;
+    color: #4a7ebe;
+    transition: 0.3s;
+}
+.support-text:hover .iaa-logo {
+    opacity: 1.0;
+}
+.iaa2005-link:hover {
+    color: #00244d;
+}
+.iaa-logo {
+    width: 55px;
+    margin-left: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+svg {
+    transition: 0.3s;
+}
+.github:hover svg{
+    fill: #343742;
+    transition: 0.3s;
+}
+ul a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 30px;
+    color: #343742;
+    transition: 0.1s;
+}
+ul li {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 21px;
+    color: #343742;
+}
+.section p {
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 26px;
+    color: #343742;
+}
+.section p a {
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 26px;
+    color: #343742;
+}
+ul strong {
+    font-size: 20px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #343742;
+}
+.like {
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.error-div {
+    height: fit-content;
+    width: fit-content;
+    max-width: 500px;
+    display: grid;
+    margin: 20vw auto auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tel-like {
+    display: inline-flex;
+}
+.support-div {
+    padding: 150px 100px;
+    display: inline-flex;
+}
+.support-div-text {
+    width: auto;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.support-div-image {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 40vw;
+    padding-left: 30px;
+}
+
+.physics:hover {
+    background-color: #eef3ff;
+}
+.astro:hover {
+    background-color: #f6eeff;
+}
+.zftsh:hover {
+    background-color: #eefff8;
+}
+.physolimp:hover {
+    background-color: #ffeef5;
+}
+.iepho:hover {
+    background-color: #fff5ee;
+}
+.library:hover {
+    background-color: #feffee;
+}
+.coding:hover {
+    background-color: #eefcff;
+}
+.sign-with-google {
+    margin-left: auto;
+    margin-bottom: 30px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 50px;
+    border: none;
+    display: inline-flex;
+    padding-right: 12px;
+    background-color: #f1f1f3;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    transition: 0.3s;
+    display: none;
+}
+.sign-with-google:hover {
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0px 0px 15px 0px #e5e5e5;
+    transition: 0.3s;
+
+}
+.google-icon {
+    height: 21px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.google-text {
+    width: fit-content;
+    color: #343742;
+}
+.section-new {
+    margin-bottom: 50px;
+}
+ul a:any-link:hover {
+    color: #0473e1;
+}
+.physics-gradient {
+    background: linear-gradient(90deg, #0d182f 15%, #2062a9 66%, #90b2e0);
+}
+.coding-gradient {
+    background: linear-gradient(90deg, #0d212f 15%, #2090a9 66%, #90d7e0);
+}
+.astro-gradient {
+    background: linear-gradient(90deg, #140d2f 15%, #3e20a9 66%, #ab90e0);
+}
+.zftsh-gradient {
+    background: linear-gradient(90deg, #0a2223 15%, #156e6e 66%, #90e0d9);
+}
+.physolimp-gradient {
+    background: linear-gradient(90deg, #2f0d11 15%, #a92089 66%, #e09090);
+}
+.iepho-gradient {
+    background: linear-gradient(90deg, #2f120d 15%, #a94520 66%, #e0a890);
+}
+.library-gradient {
+    background: linear-gradient(90deg, #2f230d 15%, #a97e20 66%, #e0d090);
+}
+.practasks-gradient {
+    background: linear-gradient(90deg, #272f0d 15%, #7ba920 66%, #cfe090);
+}
+
+.gradient-text {
+    margin-top: 0px;
+    font-size: min(10vw, 80px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #343742;
+    display: -webkit-inline-box;
+}
+.icon-sponsor {
+    fill: white;
+    height: 18px;
+    width: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: 0.3s;
+}
+.button-sponsor {
+    margin-left: 15px;
+    margin-top: 10px;
+    width: fit-content;
+    border-radius: 50px;
+    height: fit-content;
+    background-color: #fa3688;
+    border: solid 3px #fa3688;
+    display: inline-flex;
+    transition: 0.3s;
+}
+.button-sponsor:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 3px #fa3688;
+    cursor: pointer;
+}
+.button-sponsor:hover .button-text {
+    color: #fa3688;
+}
+.button-sponsor:hover .icon-sponsor {
+    fill: #fa3688;
+}
+.button-text {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 18px;
+    margin: 11px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1200px) {
+    .table {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 40px;
+        grid-column-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .table {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+        grid-column-gap: 40px;
+    }
+    .tel-like {
+        display: grid;
+    }
+    .button-sponsor {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .button-sponsor {
+        margin-left: 0px;
+    }
+    .logo {
+        width: -webkit-fill-available;
+        /*margin-bottom: 30px;*/
+    }
+    .title-header {
+        padding: 50px;
+        width: auto;
+        display: grid;
+    }
+    .big-menu {
+        padding: 50px;
+    }
+    .table {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+        grid-column-gap: 40px;
+    }
+    footer {
+        padding: 50px;
+        display: inline-flex;
+    }
+    a {
+        font-size: 16px;
+    }
+    .h-table-2 {
+        line-height: 21px;
+    }
+    h1 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #343742;
+        letter-spacing: 0.5px;
+    }
+    ul {
+        padding-inline-start: 2px;
+    }
+    ul li ul{
+        padding-inline-start: 20px;
+    }
+    ul a {
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: 300;
+        line-height: 20px;
+        color: #343742;
+    }
+    .section p {
+        font-size: 14px;
+        text-decoration: none;
+        line-height: 18px;
+        color: #343742;
+    }
+    .section p a {
+        font-size: 14px;
+        text-decoration: none;
+        line-height: 18px;
+        color: #343742;
+    }
+    ul strong {
+        font-size: 14px;
+        line-height: 18px;
+        text-decoration: none;
+        color: #343742;
+    }
+    .support-div {
+        padding: 50px;
+        display: grid;
+    }
+    .support-div-text {
+        width: auto;
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .support-div-image {
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 50px;
+    }
+    ul {
+        list-style: none;
+    }
+    ul li::before {
+        content: "\2022";
+        color: #343742;
+        font-size: 40px;
+        line-height: 16px;
+        margin-right: 5px;
+        display: -webkit-inline-box;
+    }
+    ul li ul li::before {
+        content: "◦";
+        color: #343742;
+        font-size: 13px;
+        line-height: 16px;
+        margin-right: 5px;
+        display: -webkit-inline-box;
+    }
+}
