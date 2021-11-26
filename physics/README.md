@@ -4,7 +4,6 @@
 - [**NEW** Задачи Д.А.Александрова](../physics-files/termodinamica-aleksandrov.pdf)
     - [Задачи №83, 84, 85](../physics-files/aleksandrov-83-84-85-termo.pdf)
 - [**NEW** Контрольная работа Тепловые двигатели](../physics-files/Контрольная_работа_Тепловые_двигатели.pdf) — [Подробное решение](../physics-files/Контрольная_работа_Тепловые_двигатели_Решение.pdf)
-- [**NEW** Олимпиада ]
 - [Задачи Mathus Тепловые двигатели](../physics-files/teploma.pdf)
     - [Задача №45](../physics-files/teploma-45.pdf)
     - [Задачи №40, 44, 46](../physics-files/teploma-40-44-46.pdf)
