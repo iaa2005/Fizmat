@@ -1,5 +1,22 @@
 Официальный сайт — [iepho.ru](http://iepho.ru/). Здесь те эксперименты, которых нет на сайте:
 
+## **NEW** 2021
+### Первый тур
+- [IEPhO 2021 T1 8A — Весы](../iepho-files/8-2_Vesy.pdf)
+- [IEPhO 2021 T1 8B — Вытекание](../iepho-files/8_1_Vytekanie.pdf)
+- [IEPhO 2021 T1 9A — Дисперсия в линзе](../iepho-files/9-1_Dispersia_v_linze.pdf)
+- [IEPhO 2021 T1 9B — Весы](../iepho-files/9-2_Vesy.pdf)
+- [IEPhO 2021 T1 10A 11A — Дисперсия](../iepho-files/10-1_11-1_Dispersia.pdf)
+- [IEPhO 2021 T1 10B — Вязкость воздуха](../iepho-files/10-2_Vyazkost_vozdukha.pdf)
+- [IEPhO 2021 T1 11B — Вязкость воздуха](../iepho-files/11-2_Vyazkost_vozdukha.pdf)
+### Второй тур
+- [IEPhO 2021 T2 8A 9A — Сжатый воздух](../iepho-files/8-3_9-3_Szhaty_vozdukh.pdf)
+- [IEPhO 2021 T2 8B — Вкручивание](../iepho-files/8-4_Vkruchivanie.pdf)
+- [IEPhO 2021 T2 9B — Черный амперметр](../iepho-files/9-4_Cherny_ampermetr.pdf)
+- [IEPhO 2021 T2 10A 11A — Отражение, преломление и пропускание](../iepho-files/10-3_11-3_Otrazhenie_prelomlenie_i_propuskanie.pdf)
+- [IEPhO 2021 T2 10B — Черный амперметр](../iepho-files/10-4_Cherny_ampermetr.pdf)
+- [IEPhO 2021 T2 11B — Осциллограф](../iepho-files/11-4_Schup_ostsillografa.pdf)
+
 ## 2019
 - [IEPhO 2019 T3 10-5](../iepho-files/IEPhO_2019_T3-10-5.pdf)
 - [IEPhO 2019 T3 10-6](../iepho-files/IEPhO_2019_T3-10-6.pdf)
