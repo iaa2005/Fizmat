@@ -16,10 +16,16 @@
 - [IEPhO 2021 T2 10A 11A — Отражение, преломление и пропускание](../iepho-files/10-3_11-3_Otrazhenie_prelomlenie_i_propuskanie.pdf)
 - [IEPhO 2021 T2 10B — Черный амперметр](../iepho-files/10-4_Cherny_ampermetr.pdf)
 - [IEPhO 2021 T2 11B — Осциллограф](../iepho-files/11-4_Schup_ostsillografa.pdf)
+### Третий тур
+- [IEPhO 2021 T3 8A — Пушка](../iepho-files/8-5_Pushka.pdf)
+- [IEPhO 2021 T3 8B 9A — Шприц и игла](../iepho-files/8-6_9-6_Shprits_i_Igla.pdf)
+- [IEPhO 2021 T3 9B 10A — Цепной фонтан](../iepho-files/9-5_10-5_Tsep.pdf)
+- [IEPhO 2021 T3 10B — Вентилятор](../iepho-files/10-6_Ventilyator.pdf)
+- [IEPhO 2021 T3 11B — Ультразвуковой анемометр](../iepho-files/11-6_UZ_anemometr.pdf)
 
 ## 2019
-- [IEPhO 2019 T3 10-5](../iepho-files/IEPhO_2019_T3-10-5.pdf)
-- [IEPhO 2019 T3 10-6](../iepho-files/IEPhO_2019_T3-10-6.pdf)
+- [IEPhO 2019 T3 10A](../iepho-files/IEPhO_2019_T3-10-5.pdf)
+- [IEPhO 2019 T3 10B](../iepho-files/IEPhO_2019_T3-10-6.pdf)
 
 ## 2017
 - [IEPhO 2017 T3 10AB](../iepho-files/IEPhO_2017_T3-10AB.pdf)
