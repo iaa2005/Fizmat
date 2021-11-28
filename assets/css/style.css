@@ -293,8 +293,11 @@ ul strong {
 .section-new {
     margin-bottom: 50px;
 }
+/*ul a:any-link {*/
+/*    color: #455ea8;*/
+/*}*/
 ul a:any-link:hover {
-    color: #0473e1;
+    color: #178aff;
 }
 .physics-gradient {
     background: linear-gradient(90deg, #0d182f 15%, #2062a9 66%, #90b2e0);
