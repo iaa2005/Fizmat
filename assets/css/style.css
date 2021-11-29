@@ -259,6 +259,9 @@ ul strong {
 .coding:hover {
     background-color: #eefcff;
 }
+.maths:hover {
+    background-color: #eefff1;
+}
 .sign-with-google {
     margin-left: auto;
     margin-bottom: 30px;
@@ -322,6 +325,9 @@ ul a:any-link:hover {
 }
 .practasks-gradient {
     background: linear-gradient(90deg, #272f0d 15%, #7ba920 66%, #cfe090);
+}
+.maths-gradient {
+    background: linear-gradient(90deg, #0d2f13 15%, #20a957 66%, #9fe090);;
 }
 
 .gradient-text {

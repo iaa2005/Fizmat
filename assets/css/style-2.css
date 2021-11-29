@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    background-color: #131313;
+    font-family: 'Montserrat', sans-serif;
+}
+.title-header {
+    width: auto;
+    padding-left: 100px;
+    padding-top: 165px;
+    padding-bottom: 100px;
+    /*background: linear-gradient(90deg, #131313 70%, rgb(35, 35, 35) 100%);*/
+}
+.title-header h1 {
+    color: white;
+    font-size: 56px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+.title-header h2 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
