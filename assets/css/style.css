@@ -172,7 +172,7 @@ svg {
     fill: #343742;
     transition: 0.3s;
 }
-ul a {
+ul a, ol a {
     font-size: 20px;
     text-decoration: none;
     font-weight: 300;
@@ -180,7 +180,7 @@ ul a {
     color: #343742;
     transition: 0.1s;
 }
-ul li {
+ul li, ol li {
     font-size: 20px;
     text-decoration: none;
     font-weight: 300;
@@ -299,7 +299,7 @@ ul strong {
 /*ul a:any-link {*/
 /*    color: #455ea8;*/
 /*}*/
-ul a:any-link:hover {
+ul a:any-link:hover, ol a:any-link:hover {
     color: #178aff;
 }
 .physics-gradient {
@@ -440,13 +440,13 @@ ul a:any-link:hover {
         color: #343742;
         letter-spacing: 0.5px;
     }
-    ul {
+    ul, ol {
         padding-inline-start: 2px;
     }
-    ul li ul{
+    ul li ul, ol li ol {
         padding-inline-start: 20px;
     }
-    ul a {
+    ul a, ol a {
         font-size: 14px;
         text-decoration: none;
         font-weight: 300;
@@ -465,7 +465,7 @@ ul a:any-link:hover {
         line-height: 18px;
         color: #343742;
     }
-    ul strong {
+    ul strong, ol strong {
         font-size: 14px;
         line-height: 18px;
         text-decoration: none;
