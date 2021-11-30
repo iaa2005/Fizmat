@@ -440,8 +440,11 @@ ul a:any-link:hover, ol a:any-link:hover {
         color: #343742;
         letter-spacing: 0.5px;
     }
-    ul, ol {
+    ul {
         padding-inline-start: 2px;
+    }
+    ol {
+        padding-inline-start: 20px;
     }
     ul li ul, ol li ol {
         padding-inline-start: 20px;
@@ -498,6 +501,9 @@ ul a:any-link:hover, ol a:any-link:hover {
         line-height: 16px;
         margin-right: 5px;
         display: -webkit-inline-box;
+    }
+    ol li::marker {
+        font-size: 14px;
     }
     ul li ul li::before {
         content: "◦";
