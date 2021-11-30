@@ -13,7 +13,7 @@
 - <a>*Другие задачи*</a>
     - [Спиральная галактика](../astronomy-files/Спиральная-галактика.pdf)<!-- Муницип 2017-2018 Задача 6 10 класс -->
 - <a>*Упражнения из сборника задач В.Б. Игнатьева*</a>
-    - [293. Марс и Антарес](../astronomy-files/task293.pdf)
+    - [**NEW** 293. Марс и Антарес](../astronomy-files/task293.pdf)
     - [1410. Задача про двойную звезду](../astronomy-files/task1410.pdf)
     - [1447. Сфера Дайсона](../astronomy-files/task1447.pdf)
 - [*МОШ 2017-2018*](https://mos.olimpiada.ru/upload/files/Archive_tasks_2013-%2E%2E%2E/2017-18/astr/tasks-astr-10-11-teor-final-17-8.pdf)
