@@ -2,7 +2,6 @@
 - [Книга PDF](../maths-files/problembook_withlogo_12_02_2021.pdf)
 
 ## 9—10 класс
-
 1. [Разнобой (Муниципальный этап 2015)](../maths-files/9-10-gluhov/1._Разнобой_(Муниципал_2015).pdf)
 2. [Мат. индукция](../maths-files/9-10-gluhov/2._Мат._индукция.pdf) — [Мат. индукция решения](../maths-files/9-10-gluhov/2._Мат._индукция_решения.pdf) — [Youtube](https://www.youtube.com/watch?v=GTiNM5-wkeY)
 3. [Принцип крайнего](../maths-files/9-10-gluhov/3._Принцип_крайнего.pdf)
