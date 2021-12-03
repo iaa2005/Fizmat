@@ -1,3 +1,16 @@
+## Важные данные
+- [Все формулы по астрономии (made by @iaa2005)](../astronomy-files/formulas-by-iaa2005.pdf)
+- [**NEW** Астрадь](../astronomy-files/astro-notebook.pdf)
+
+## Сурдин
+- [**NEW** Сурдин В.Г. Галактики (Астрономия) — 2013](../astronomy-files/78063_88fd4755d57baaca609b7084b61406c6.pdf)
+- [EPUB Формат для iBooks](https://share.ipfs.io/#/bafybeie2cnfxeuiytfhgrar7bp3teonyrjddqu43urf745gp2czzgej22m) — [Сурдин В.Г. Звёзды (Астрономия и астрофизика) — 2009](../astronomy-files/Сурдин-В.Г.-Звёзды-(Астрономия-и-астрофизика)-2009.pdf)
+
+## Астрофизика
+- [**NEW** Курс общей астрофизики К.А. Постнов, А.В. Засов 2005г.](../astronomy-files/2005-postnov-zasov.pdf)
+- [**NEW** Обшая астрофизика К.А. Постнов, А.В. Засов 2011г.](../astronomy-files/general_astrophysics.pdf)
+
+## Астрономия
 - [Небесная механика. Ноябрь 21 2021. Взлет](../astronomy-files/Небесная-механика-27-11-2021-Взлет.pdf)
 - <a>*Пробный регион. Ноябрь 2021*</a>
     - [Пробный регион разбалловка и ключи. Ноябрь 2021](../astronomy-files/Пробный_регион_разбалловка_и_ключи_нояб_2021.pdf)
@@ -19,6 +32,3 @@
 - [*МОШ 2017-2018*](https://mos.olimpiada.ru/upload/files/Archive_tasks_2013-%2E%2E%2E/2017-18/astr/tasks-astr-10-11-teor-final-17-8.pdf)
     - [Задачи с решениями](https://mosastro.olimpiada.ru/upload/files/mos2018/mosgor_2018_teor_10-11_solutions.pdf)
 - [Массы и размеры звезд](https://reader.lecta.rosuchebnik.ru/demo/7934-62/data/chapters/Chapter23/index.xhtml)
-- [EPUB Формат для iBooks](https://share.ipfs.io/#/bafybeie2cnfxeuiytfhgrar7bp3teonyrjddqu43urf745gp2czzgej22m) — [Сурдин В.Г. Звёзды (Астрономия и астрофизика) - 2009](../astronomy-files/Сурдин-В.Г.-Звёзды-(Астрономия-и-астрофизика)-2009.pdf)
-- [Все формулы по астрономии (made by @iaa2005)](../astronomy-files/formulas-by-iaa2005.pdf)
-- [**NEW** Астрадь](../astronomy-files/astro-notebook.pdf)

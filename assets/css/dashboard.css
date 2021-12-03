@@ -1,0 +1,69 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: #343742;
+}
+
+.dashboard {
+    width: -webkit-fill-available;
+    height: 100vh;
+    background-color: rgb(241 241 243);
+    padding: 75px;
+    display: inline-block;
+}
+
+.db-menu {
+    display: inline-grid;
+    grid-gap: 10px;
+    margin-right: 25px;
+}
+.db-canvas {
+    width: auto;
+    height: -webkit-fill-available;
+    background-color: white;
+    border-radius: 20px;
+    display: block;
+}
+
+footer {
+    padding: 75px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #adb1b6;
+}
+.support-text {
+    font-weight: 300;
+    font-size: 18px;
+    color: #adb1b6;
+}
+.iaa2005-link {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 18px;
+    color: #4a7ebe;
+    transition: 0.3s;
+}
+.support-text:hover .iaa-logo {
+    opacity: 1.0;
+}
+.iaa2005-link:hover {
+    color: #00244d;
+}
+.iaa-logo {
+    width: 55px;
+    margin-left: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+svg {
+    transition: 0.3s;
+}
+.github:hover svg{
+    fill: #343742;
+    transition: 0.3s;
+}
