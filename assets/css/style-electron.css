@@ -43,6 +43,16 @@ h3 {
     width: min(480px, 65vw);
     margin-bottom: 30px;
 }
+.login-loading {
+    display: inline-flex;
+    align-items: center;
+    grid-gap: 10px;
+}
+#loading-img {
+    display: none;
+    height: 34px;
+    width: 34px;
+}
 .about-canvas {
     margin-top: auto;
     margin-bottom: auto;
@@ -203,7 +213,7 @@ button {
 .block-3-img {
     margin-top: auto;
     margin-bottom: auto;
-    height: fit-content;
+    height: auto;
     width: 35vw;
 }
 .link-reg {

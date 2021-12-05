@@ -24,7 +24,85 @@ $(document).ready(async function() {
         })
     }
 
-    setTimeout(function(){
-        console.log(auth.currentUser);
-    }, 2*1000);
+    document.getElementById("account-logout").onclick = function () {
+        signOut()
+        setTimeout(function(){
+            window.location.href = '/electron';
+        }, 1000);
+    }
+
+    document.getElementById("storage").classList.remove("not-display")
+    document.getElementById("menu-storage").classList.add("db-menu-li-selected")
+
+    document.getElementById("menu-account").onclick = function () {
+        document.getElementById("storage").classList.add("not-display")
+        document.getElementById("my-files").classList.add("not-display")
+        document.getElementById("upload-file").classList.add("not-display")
+        document.getElementById("my-olymps").classList.add("not-display")
+        document.getElementById("account").classList.remove("not-display")
+
+        document.getElementById("menu-storage").classList.remove("db-menu-li-selected")
+        document.getElementById("menu-my-files").classList.remove("db-menu-li-selected")
+        document.getElementById("menu-upload-file").classList.remove("db-menu-li-selected")
+        document.getElementById("menu-my-olymps").classList.remove("db-menu-li-selected")
+        document.getElementById("menu-account").classList.add("db-menu-li-selected")
+    }
+
+    document.getElementById("menu-storage").onclick = function () {
+        document.getElementById("storage").classList.remove("not-display")
+        document.getElementById("my-files").classList.add("not-display")
+        document.getElementById("upload-file").classList.add("not-display")
+        document.getElementById("my-olymps").classList.add("not-display")
+        document.getElementById("account").classList.add("not-display")
+
+        document.getElementById("menu-storage").classList.add("db-menu-li-selected")
+        document.getElementById("menu-my-files").classList.remove("db-menu-li-selected")
+        document.getElementById("menu-upload-file").classList.remove("db-menu-li-selected")
+        document.getElementById("menu-my-olymps").classList.remove("db-menu-li-selected")
+        document.getElementById("menu-account").classList.remove("db-menu-li-selected")
+    }
+
+    document.getElementById("menu-my-files").onclick = function () {
+        document.getElementById("storage").classList.add("not-display")
+        document.getElementById("my-files").classList.remove("not-display")
+        document.getElementById("upload-file").classList.add("not-display")
+        document.getElementById("my-olymps").classList.add("not-display")
+        document.getElementById("account").classList.add("not-display")
+
+        document.getElementById("menu-storage").classList.remove("db-menu-li-selected")
+        document.getElementById("menu-my-files").classList.add("db-menu-li-selected")
+        document.getElementById("menu-upload-file").classList.remove("db-menu-li-selected")
+        document.getElementById("menu-my-olymps").classList.remove("db-menu-li-selected")
+        document.getElementById("menu-account").classList.remove("db-menu-li-selected")
+    }
+
+    document.getElementById("menu-upload-file").onclick = function () {
+        document.getElementById("storage").classList.add("not-display")
+        document.getElementById("my-files").classList.add("not-display")
+        document.getElementById("upload-file").classList.remove("not-display")
+        document.getElementById("my-olymps").classList.add("not-display")
+        document.getElementById("account").classList.add("not-display")
+
+        document.getElementById("menu-storage").classList.remove("db-menu-li-selected")
+        document.getElementById("menu-my-files").classList.remove("db-menu-li-selected")
+        document.getElementById("menu-upload-file").classList.add("db-menu-li-selected")
+        document.getElementById("menu-my-olymps").classList.remove("db-menu-li-selected")
+        document.getElementById("menu-account").classList.remove("db-menu-li-selected")
+    }
+
+    document.getElementById("menu-my-olymps").onclick = function () {
+        document.getElementById("storage").classList.add("not-display")
+        document.getElementById("my-files").classList.add("not-display")
+        document.getElementById("upload-file").classList.add("not-display")
+        document.getElementById("my-olymps").classList.remove("not-display")
+        document.getElementById("account").classList.add("not-display")
+
+        document.getElementById("menu-storage").classList.remove("db-menu-li-selected")
+        document.getElementById("menu-my-files").classList.remove("db-menu-li-selected")
+        document.getElementById("menu-upload-file").classList.remove("db-menu-li-selected")
+        document.getElementById("menu-my-olymps").classList.add("db-menu-li-selected")
+        document.getElementById("menu-account").classList.remove("db-menu-li-selected")
+    }
+
+
 })

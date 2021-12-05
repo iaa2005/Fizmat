@@ -3,26 +3,124 @@ body {
     margin: 0;
     color: #343742;
 }
-
+h1, h2, h3, h4 {
+    padding: 0;
+    margin: 0;
+}
+input {
+    width: 250px;
+    height: 22px;
+    border-radius: 50px;
+    border: 0px solid;
+    background-color: #F1F1F3FF;
+    margin-top: 0px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 0px;
+    font-family: Montserrat, serif;
+    color: #343742;
+    letter-spacing: 0.2px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.dashboard-header {
+    display: flex;
+    align-items: center;
+}
+.fizmat-logo {
+    height: 54px;
+}
+.account-logout {
+    border-radius: 50px;
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+    margin-left: auto;
+}
+.account-logout svg g {
+    transition: 0.3s;
+}
+.account-logout a {
+    transition: 0.3s;
+}
+.account-logout:hover {
+    cursor: pointer;
+}
+.account-logout:hover a {
+    color: #4a7ebe;
+}
+.account-logout:hover svg g {
+    fill: #4a7ebe;
+}
 .dashboard {
     width: -webkit-fill-available;
-    height: 100vh;
+    height: -webkit-fit-content;
     background-color: rgb(241 241 243);
     padding: 75px;
-    display: inline-block;
+    display: grid;
+    grid-template-rows: max-content;
+    grid-gap: 20px;
 }
-
-.db-menu {
-    display: inline-grid;
-    grid-gap: 10px;
-    margin-right: 25px;
+.dashboard-btwn {
+    display: inline-flex;
 }
 .db-canvas {
-    width: auto;
-    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    height: auto;
     background-color: white;
     border-radius: 20px;
     display: block;
+    position: relative;
+    z-index: 1;
+}
+.db-menu {
+    width: 220px;
+    height: fit-content;
+    display: grid;
+    grid-gap: 15px;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+.db-menu-li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.db-menu-li:hover {
+    cursor: pointer;
+    color: #354188;
+}
+.db-menu-li-selected {
+    font-weight: 700;
+}
+.db-canvas-block {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    position: relative;
+    padding: 30px;
+}
+.db-canvas-account {
+    z-index: 2;
+}
+.db-canvas-my-files {
+    z-index: 3;
+}
+.db-canvas-storage {
+    z-index: 4;
+}
+.db-canvas-my-olymps {
+    z-index: 5;
+}
+.not-display {
+    display: none;
 }
 
 footer {

@@ -36,11 +36,18 @@ $(document).ready(async function() {
         let login = LoginInput.value
         let password = PasswordInput.value
 
+        document.getElementById("loading-img").style.display = "block";
+
         auth.signInWithEmailAndPassword(login, password)
             .then((userCredential) => {
                 // Signed in
                 const user = userCredential.user;
                 console.log(user)
+
+                setTimeout(function() {
+                    window.location.href = '/electron/dashboard';
+                }, 2*1000);
+
 
                 // Create cache of user authentication
                 auth.setPersistence(auth.browserSessionPersistence)
@@ -60,13 +67,11 @@ $(document).ready(async function() {
 
             })
             .catch((error) => {
+                document.getElementById("loading-img").style.display = "none";
+
                 const errorCode = error.code;
                 const errorMessage = error.message;
             });
-
-        setTimeout(function(){
-            window.location.href = '/electron/dashboard';
-        }, 2*1000);
     }
 
     setTimeout(function(){

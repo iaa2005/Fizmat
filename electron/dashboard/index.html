@@ -42,19 +42,58 @@
 </head>
 <body>
 <div class="dashboard">
-    <div class="db-menu">
-        <a>Мои файлы</a>
-        <a>Загрузить файл</a>
-        <a>Все файлы Fizmat</a>
+    <div class="dashboard-header">
+        <img class="fizmat-logo" src="../../assets/images/fizmat-logo.svg">
+        <div class="account-logout" id="account-logout">
+            <a>Выйти</a>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                 width="24" height="24"
+                 viewBox="0 0 172 172"
+                 style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#343742"><path d="M28.66667,17.2c-6.32387,0 -11.46667,5.1428 -11.46667,11.46667v114.66667c0,6.32387 5.1428,11.46667 11.46667,11.46667h80.26667c6.32387,0 11.46667,-5.1428 11.46667,-11.46667v-51.6h-45.86667c-3.1648,0 -5.73333,-2.56853 -5.73333,-5.73333c0,-3.1648 2.56853,-5.73333 5.73333,-5.73333h45.86667v-51.6c0,-6.32387 -5.1428,-11.46667 -11.46667,-11.46667zM120.4,80.26667v11.46667h32.02604l-13.14636,13.14636c-1.49778,1.43802 -2.10113,3.5734 -1.57735,5.5826c0.52378,2.0092 2.09284,3.57826 4.10204,4.10204c2.0092,0.52378 4.14458,-0.07957 5.5826,-1.57735l22.93333,-22.93333c2.23811,-2.23904 2.23811,-5.86825 0,-8.10729l-22.93333,-22.93333c-1.07942,-1.10959 -2.56163,-1.73559 -4.10964,-1.73568c-2.33302,0.00061 -4.43306,1.41473 -5.31096,3.57628c-0.8779,2.16155 -0.3586,4.6395 1.31331,6.26668l13.14636,13.14636z"></path></g></g>
+            </svg>
+        </div>
     </div>
-    <div class="db-canvas">
+    <div class="dashboard-btwn">
+        <div class="db-menu">
+            <a class="db-menu-li" id="menu-storage">Хранилище</a>
+            <a class="db-menu-li" id="menu-my-files">Мои файлы</a>
+            <a class="db-menu-li" id="menu-upload-file">Загрузить файл</a>
+            <a class="db-menu-li" id="menu-my-olymps">Мои олимпиады</a>
+            <a class="db-menu-li" id="menu-account">Аккаунт</a>
+        </div>
+        <div class="db-canvas">
+            <div class="db-canvas-block db-canvas-storage not-display" id="storage">
+                <h1>Хранилище</h1>
+            </div>
+            <div class="db-canvas-block db-canvas-account not-display" id="account">
+                <h1>Аккаунт</h1>
+                <div style="margin-top: 20px; margin-bottom: 20px; display: grid; grid-gap: 10px;">
+                    <h3>Персональные данные</h3>
+                    <h4>Имя</h4>
+                    <input type="text">
+                    <h4>Фамилия</h4>
+                    <input type="text">
+                    <h4>Отчество</h4>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="db-canvas-block db-canvas-my-files not-display" id="my-files">
+                <h1>Мои файлы</h1>
+            </div>
+            <div class="db-canvas-block db-canvas-upload-file not-display" id="upload-file">
+                <h1>Загрузить файл</h1>
+            </div>
+            <div class="db-canvas-block db-canvas-my-olymps not-display" id="my-olymps">
+                <h1>Мои олимпиады</h1>
+            </div>
+        </div>
+    </div>
 
-    </div>
 </div>
 <footer>
     <div>
         <a class="footer-logo">Fizmat</a>
-        <p class="support-text">Этот проект поддерживается <a class="iaa2005-link" href="https://github.com/iaa2005">@iaa2005</a><img class="iaa-logo" src="../assets/images/IAA.png"></p>
+        <p class="support-text">Этот проект поддерживается <a class="iaa2005-link" href="https://github.com/iaa2005">@iaa2005</a><img class="iaa-logo" src="../../assets/images/IAA.png"></p>
     </div>
     <a class="github" style="margin-left: auto" href="https://github.com/iaa2005/Fizmat" target="_blank" rel="noopener noreferrer" style="text-decoration: none">
         <svg stroke="currentColor" fill="#adb1b6" stroke-width="0" viewBox="0 0 496 512" class="icon-link" height="36" width="36" xmlns="http://www.w3.org/2000/svg">
