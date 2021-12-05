@@ -104,5 +104,10 @@ $(document).ready(async function() {
         document.getElementById("menu-account").classList.remove("db-menu-li-selected")
     }
 
+    setTimeout(function(){
+        if (auth.currentUser == null) {
+            window.location.href = '/electron';
+        }
+    }, 2000);
 
 })
