@@ -262,6 +262,9 @@ ul strong {
 .maths:hover {
     background-color: #eefff1;
 }
+.practasks:hover {
+    background-color: #f6ffee;
+}
 .sign-with-google {
     margin-left: auto;
     margin-bottom: 30px;
