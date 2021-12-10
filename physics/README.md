@@ -1,5 +1,6 @@
 - <a>Муниципальный этап 2021-2021гг. —</a> [9 класс](../physics-files/ans-mun-phys-9-2021.pdf) — [10 класс](../physics-files/ans-mun-phys-10-2021.pdf) — [11 класс](../physics-files/ans-mun-phys-11-2021.pdf)
 - [**NEW** Задачи Mathus Насыщенный пар](../physics-files/npar.pdf)
+    - [**NEW** Задачи №2, 3, 4, 5, 6, 7, 8, 11, 18, 20, 21, 26 32, 37](../physics-files/npar-2-3-4-5-6-7-8-11-18-20-21-26-32-37.pdf)
     - [**NEW** Задачи №13 — 17](../physics-files/npar-13-14-15-16-17.pdf)
     - [**NEW** Задачи №25, 28, 31](../physics-files/npar-25-28-31.pdf)
 - [Олимпиада по физике "Формула Единства". Условия с 8-11 классы.](../physics-files/fdi_tm_2021_22_phys_1_ru_upd201121.pdf)
