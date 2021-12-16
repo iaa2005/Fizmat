@@ -1,6 +1,7 @@
 - [**NEW** Задачи Mathus Влажный воздух](../physics-files/vvpp.pdf)
     - [**NEW** Задачи №2, 3, 4, 5, 6, 8, 12, 13, 14, 15, 16, 17, 19, 26, 28, 31, 30, 29](../physics-files/vvpp-2-3-4-5-6-8-12-13-14-15-16-17-19-26-28-31-30-29.pdf)
     - [**NEW** Задача №20](../physics-files/vvpp-task-20.pdf)
+    - [**NEW** Задача №32, 1](../physics-files/vvpp-task-32-1.pdf)
 - <a>Муниципальный этап 2021-2021гг. —</a> [9 класс](../physics-files/ans-mun-phys-9-2021.pdf) — [10 класс](../physics-files/ans-mun-phys-10-2021.pdf) — [11 класс](../physics-files/ans-mun-phys-11-2021.pdf)
 - [Задачи Mathus Насыщенный пар](../physics-files/npar.pdf)
     - [Задачи №2, 3, 4, 5, 6, 7, 8, 11, 18, 20, 21, 26 32, 37](../physics-files/npar-2-3-4-5-6-7-8-11-18-20-21-26-32-37.pdf)
