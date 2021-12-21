@@ -265,6 +265,9 @@ ul strong {
 .practasks:hover {
     background-color: #f6ffee;
 }
+.lprcup:hover {
+    background-color: #ffeef1;
+}
 .sign-with-google {
     margin-left: auto;
     margin-bottom: 30px;
@@ -319,6 +322,9 @@ ul a:any-link:hover, ol a:any-link:hover {
 }
 .physolimp-gradient {
     background: linear-gradient(90deg, #2f0d11 15%, #a92089 66%, #e09090);
+}
+.lprcup-gradient {
+    background: linear-gradient(90deg, #2f120d 15%, #a9203b 66%, #e0909c);
 }
 .iepho-gradient {
     background: linear-gradient(90deg, #2f120d 15%, #a94520 66%, #e0a890);
