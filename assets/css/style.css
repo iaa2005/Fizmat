@@ -379,6 +379,15 @@ ul a:any-link:hover, ol a:any-link:hover {
     transition: 0.3s;
     font-weight: 500;
 }
+.logos-grey {
+    display: -webkit-flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    height: fit-content;
+    gap: 30px;
+}
 
 @media screen and (max-width: 1200px) {
     .table {
@@ -401,6 +410,9 @@ ul a:any-link:hover, ol a:any-link:hover {
     }
     .button-sponsor {
         margin-left: 0px;
+    }
+    .logos-grey {
+        display: none;
     }
 }
 
