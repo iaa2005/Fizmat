@@ -308,6 +308,9 @@ ul strong {
 ul a:any-link:hover, ol a:any-link:hover {
     color: #178aff;
 }
+.section p a:any-link:hover {
+    color: #178aff;
+}
 .physics-gradient {
     background: linear-gradient(90deg, #0d182f 15%, #2062a9 66%, #90b2e0);
 }
