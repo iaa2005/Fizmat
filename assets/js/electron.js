@@ -11,10 +11,12 @@ $(document).ready(async function() {
     buttonSignIn.onclick = function () {
         signInWindow.style.display = 'block'
         bluringDiv.style.display = 'block'
+        document.body.style.position = 'fixed'
     }
     buttonCloseSignIn.onclick = function () {
         signInWindow.style.display = 'none'
         bluringDiv.style.display = 'none'
+        document.body.style.position = 'unset'
     }
 
     const firebaseConfig = {
