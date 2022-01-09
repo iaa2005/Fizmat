@@ -1,7 +1,7 @@
 ## Физика
 ## 10 класс 2021-2022
 - [10-Ф-1 — Изменение и сохранение импульса и энергии в механике](../zftsh-files/2021-2022/physics/10-klass/Izmeneniye_i_sokhraneniye_impulsa_i_energii_v_mekhanike.pdf) — [*Решение: неполное*](../zftsh-files/2021-2022/physics/10-klass/answers/Izmeneniye_i_sokhraneniye_impulsa_i_energii_v_mekhanike_ANSWERS.pdf)
-- [10-Ф-2 — Основы молекулярно-кинетической теории. Законы идеального газа](../zftsh-files/2021-2022/physics/10-klass/Osnovy_molekulyarno-kineticheskoy_teorii._Zakony_idealnogo_gaza.pdf)
+- [10-Ф-2 — Основы молекулярно-кинетической теории. Законы идеального газа](../zftsh-files/2021-2022/physics/10-klass/Osnovy_molekulyarno-kineticheskoy_teorii._Zakony_idealnogo_gaza.pdf) — [*Решение: полное*](../zftsh-files/2021-2022/physics/10-klass/answers/Osnovy_molekulyarno-kineticheskoy_teorii._Zakony_idealnogo_gaza_ANSWERS.pdf)
 
 ## 9 класс 2020-2021
 - [9-Ф-1 — Векторы в физике](../zftsh-files/2020-2021/physics/9-klass/Vektory_v_fizike.pdf) — [*Решение*](../zftsh-files/2020-2021/physics/9-klass/answers/Vektory_v_fizike_ANSWERS.pdf)
