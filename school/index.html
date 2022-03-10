@@ -135,6 +135,17 @@
                 }, 3000);
             });
         }
+
+        setTimeout(function(){
+            if (auth.currentUser !== null) {
+                let user = auth.currentUser;
+                console.log(user);
+
+                setTimeout(function(){
+                    window.location.href = '/school/dashboard';
+                }, 1*1000);
+            }
+        }, 2*1000);
     })
 </script>
 </body>
