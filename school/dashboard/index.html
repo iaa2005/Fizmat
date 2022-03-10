@@ -132,7 +132,7 @@
         document.getElementById("account-logout").onclick = function () {
             signOut()
             setTimeout(function(){
-                window.location.href = '/electron';
+                window.location.href = '/school';
             }, 1000);
         }
 
@@ -211,7 +211,7 @@
 
         setTimeout(function(){
             if (auth.currentUser == null) {
-                window.location.href = '/electron';
+                window.location.href = '/school';
             }
         }, 2000);
 
@@ -287,7 +287,7 @@
     .dashboard {
         width: -webkit-fill-available;
         height: -webkit-fit-content;
-        background-color: rgb(241 241 243);
+        background-color: white;
         padding: 75px;
         display: grid;
         grid-template-rows: max-content;
@@ -299,7 +299,7 @@
     .db-canvas {
         width: -webkit-fill-available;
         height: auto;
-        background-color: white;
+        background-color: rgb(241 241 243);
         border-radius: 20px;
         display: block;
         position: relative;
