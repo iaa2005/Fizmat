@@ -66,15 +66,19 @@
             <div class="db-canvas-block db-canvas-account not-display" id="account">
                 <h1>Аккаунт</h1>
                 <div style="margin-top: 20px; margin-bottom: 20px; display: grid; grid-gap: 10px;">
-                    <h3>Персональные данные</h3>
-                    <h4 class="not-weight">Имя</h4>
-                    <input type="text">
-                    <h4 class="not-weight">Фамилия</h4>
-                    <input type="text">
-                    <h4 class="not-weight">Отчество</h4>
-                    <input type="text">
+<!--                    <h3>Персональные данные</h3>-->
+                    <h4 class="not-weight">ФИО</h4>
+<!--                    <h4 class="not-weight">Имя</h4>-->
+                    <input type="text" placeholder="Имя">
+<!--                    <h4 class="not-weight">Фамилия</h4>-->
+                    <input type="text" placeholder="Фамилия">
+<!--                    <h4 class="not-weight">Отчество</h4>-->
+                    <input type="text" placeholder="Отчество">
                     <h4 class="not-weight">Дата рождения</h4>
-                    <input type="text"> <input type="text"> <input type="text">
+                    <input type="date" id="birthDateInput" name="birth y-m-d"
+                           value="2001-01-01"
+                           min="1900-01-01" max="2022-01-01" style="width: min-content">
+                    <button><a>Сохранить</a></button>
                 </div>
             </div>
             <div class="db-canvas-block db-canvas-my-files not-display" id="my-files">
@@ -85,7 +89,17 @@
             </div>
             <div class="db-canvas-block db-canvas-my-olymps not-display" id="my-olymps">
                 <h1>Мои олимпиады</h1>
-            </div>
+
+                <button>
+                    <svg class="img-plus" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="459.325px" height="459.325px" viewBox="0 0 459.325 459.325" style="enable-background:new 0 0 459.325 459.325;"
+                     xml:space="preserve"><g><path d="M459.319,229.668c0,22.201-17.992,40.193-40.205,40.193H269.85v149.271c0,22.207-17.998,40.199-40.196,40.193
+		            c-11.101,0-21.149-4.492-28.416-11.763c-7.276-7.281-11.774-17.324-11.769-28.419l-0.006-149.288H40.181
+		            c-11.094,0-21.134-4.492-28.416-11.774c-7.264-7.264-11.759-17.312-11.759-28.413C0,207.471,17.992,189.475,40.202,189.475h149.267
+		            V40.202C189.469,17.998,207.471,0,229.671,0c22.192,0.006,40.178,17.986,40.19,40.187v149.288h149.282
+		            C441.339,189.487,459.308,207.471,459.319,229.668z"/>
+                    </svg><a>Добавить олимпиаду</a>
+                </button></div>
         </div>
     </div>
 
@@ -104,6 +118,15 @@
 </footer>
 <script>
     $(document).ready(async function() {
+        let today = new Date();
+        let dd = today.getDate();
+        let mm = today.getMonth() + 1; //January is 0!
+        let yyyy = today.getFullYear();
+        if (dd < 10) { dd = '0' + dd; }
+        if (mm < 10) { mm = '0' + mm; }
+        today = yyyy + '-' + mm + '-' + dd;
+        document.getElementById("birthDateInput").setAttribute("max", today);
+
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         const firebaseConfig = {
@@ -224,6 +247,18 @@
         margin: 0;
         color: #343742;
     }
+    .img-plus {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 10px;
+        height: 18px;
+        width: 18px;
+        fill: white;
+        transition: 0.1s ease-in;
+    }
+    h1 {
+        font-size: 36px;
+    }
     h1, h2, h3, h4 {
         padding: 0;
         margin: 0;
@@ -231,12 +266,39 @@
     .not-weight {
         font-weight: 400;
     }
+    button {
+        display: flex;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        color: white;
+        background-color: #0069d9;
+        border: 2px solid #0069d9;
+        width: fit-content;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 30px;
+        transition: 0.1s ease-in;
+    }
+    button:hover .img-plus {
+        fill: #0069d9;
+    }
+    button:hover {
+        cursor: pointer;
+        color: #0069d9;
+        background-color: white;
+        transition: 0.1s ease-in;
+        border: 2px solid #0069d9;
+    }
     input {
         width: 250px;
         height: 22px;
         border-radius: 50px;
         border: 0px solid;
-        background-color: #F1F1F3FF;
+        background-color: #ffffff;
         margin-top: 0px;
         padding: 5px;
         padding-left: 15px;

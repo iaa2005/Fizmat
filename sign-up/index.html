@@ -1,56 +1,56 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Fizmat | Electron</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../assets/css/style-sign-up.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:locale" content="ru-RU">
-    <meta property="og:description" content="Fizmat — вся физика, астрономия и книги на одном сайте">
-    <meta property="og:url" content="https://fizmat.ga/">
-    <meta property="og:site_name" content="Fizmat">
-    <meta property="og:title" content="Fizmat | Electron">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="../assets/apple-icon-180x180.png">
-    <meta name="twitter:card" content="summary">
-    <meta property="twitter:title" content="Fizmat">
-    <link rel="canonical" href="https://fizmat.ga/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Description" content="Fizmat — вся физика, астрономия и книги на одном сайте. Физика, Астрономия, ЗФТШ, Physolimp, IEPhO, Coding в одной руке!">
-    <meta name="author" content="@iaa2005">
-    <meta name="keywords" content="iaa2005, iaa, физика, квант, мош, олимпиада, всош">
-    <meta name="yandex-verification" content="e99a13b1d2fcf47e">
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="apple-touch-icon" href="../assets/images/apple-icon-76x76.png" sizes="76x76">
-    <link rel="apple-touch-icon" href="../assets/images/apple-icon-120x120.png" sizes="120x120">
-    <link rel="apple-touch-icon" href="../assets/images/apple-icon-152x152.png" sizes="152x152">
-    <link rel="apple-touch-icon" href="../assets/images/apple-icon-180x180.png" sizes="180x180">
-    <link rel="apple-touch-startup-image" href="../assets/images/launch.png">
-    <meta name="apple-mobile-web-app-title" content="Fizmat">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <script src="../assets/js/showdown.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../assets/js/sign-up.js"></script>
-</head>
-<body>
-<div class="sign-up" id="sign-up-window">
-    <h3 style="margin-top: 0"><strong>Создать аккаунт</strong></h3>
-    <a>Электронный адрес</a>
-    <input class="login" id="login-input">
-    <a>Пароль</a>
-    <input class="password-input" type="password" id="password-input">
-    <a>Подтвердите пароль</a>
-    <input class="password-input" type="password" id="password-input-again">
-    <a style="font-size: 16px; color: red" id="error-text"></a>
-    <button class="sign-up-button" id="SignUpButton">Зарегистрироваться</button>
-</div>
-</body>
-</html>
+<!--<!DOCTYPE html>-->
+<!--<html lang="ru">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Fizmat | Electron</title>-->
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--    <link rel="stylesheet" href="../assets/css/style-sign-up.css">-->
+<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <meta property="og:locale" content="ru-RU">-->
+<!--    <meta property="og:description" content="Fizmat — вся физика, астрономия и книги на одном сайте">-->
+<!--    <meta property="og:url" content="https://fizmat.ga/">-->
+<!--    <meta property="og:site_name" content="Fizmat">-->
+<!--    <meta property="og:title" content="Fizmat | Electron">-->
+<!--    <meta property="og:type" content="website">-->
+<!--    <meta property="og:image" content="../assets/apple-icon-180x180.png">-->
+<!--    <meta name="twitter:card" content="summary">-->
+<!--    <meta property="twitter:title" content="Fizmat">-->
+<!--    <link rel="canonical" href="https://fizmat.ga/">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <meta name="Description" content="Fizmat — вся физика, астрономия и книги на одном сайте. Физика, Астрономия, ЗФТШ, Physolimp, IEPhO, Coding в одной руке!">-->
+<!--    <meta name="author" content="@iaa2005">-->
+<!--    <meta name="keywords" content="iaa2005, iaa, физика, квант, мош, олимпиада, всош">-->
+<!--    <meta name="yandex-verification" content="e99a13b1d2fcf47e">-->
+<!--    <link rel="shortcut icon" href="../favicon.ico">-->
+<!--    <link rel="apple-touch-icon" href="../assets/images/apple-icon-76x76.png" sizes="76x76">-->
+<!--    <link rel="apple-touch-icon" href="../assets/images/apple-icon-120x120.png" sizes="120x120">-->
+<!--    <link rel="apple-touch-icon" href="../assets/images/apple-icon-152x152.png" sizes="152x152">-->
+<!--    <link rel="apple-touch-icon" href="../assets/images/apple-icon-180x180.png" sizes="180x180">-->
+<!--    <link rel="apple-touch-startup-image" href="../assets/images/launch.png">-->
+<!--    <meta name="apple-mobile-web-app-title" content="Fizmat">-->
+<!--    <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+<!--    <script src="../assets/js/showdown.min.js"></script>-->
+<!--    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>-->
+<!--    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>-->
+<!--    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>-->
+<!--    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<!--    <script type="text/javascript" src="../assets/js/sign-up.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="sign-up" id="sign-up-window">-->
+<!--    <h3 style="margin-top: 0"><strong>Создать аккаунт</strong></h3>-->
+<!--    <a>Электронный адрес</a>-->
+<!--    <input class="login" id="login-input">-->
+<!--    <a>Пароль</a>-->
+<!--    <input class="password-input" type="password" id="password-input">-->
+<!--    <a>Подтвердите пароль</a>-->
+<!--    <input class="password-input" type="password" id="password-input-again">-->
+<!--    <a style="font-size: 16px; color: red" id="error-text"></a>-->
+<!--    <button class="sign-up-button" id="SignUpButton">Зарегистрироваться</button>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->

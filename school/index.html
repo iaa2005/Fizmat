@@ -41,7 +41,7 @@
     <!--  <script type="text/javascript" src="../assets/js/school.js"></script>-->
 </head>
 <body>
-<img class="background" src="images/file-20201207-15-1q9gwxh.jpg">
+<img class="background" src="images/file-20201207-15-1q9gwxh-2.jpg">
 <div class="login-box-out">
     <div class="login-box">
         <img class="fizmat-logo center" src="images/fizmat-white.svg">
@@ -78,7 +78,9 @@
         const app = firebase.initializeApp(firebaseConfig);
         const auth = firebase.auth();
 
-        buttonSignIn.onclick = function () {
+        buttonSignIn.onclick = function () { buttonSignIn_pressed() }
+
+        function buttonSignIn_pressed() {
             let login = LoginInput.value;
             let password = PasswordInput.value;
 
@@ -136,8 +138,19 @@
             });
         }
 
+        document.addEventListener("keyup", function(event) {
+            if (event.key === "Enter") {
+                // alert('Enter is pressed!');
+                buttonSignIn_pressed();
+            }
+        });
+
         setTimeout(function(){
             if (auth.currentUser !== null) {
+
+                buttonSignIn.style.display = "none";
+                document.getElementById("loading-img").style.display = "block";
+
                 let user = auth.currentUser;
                 console.log(user);
 
