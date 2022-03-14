@@ -32,6 +32,7 @@
     <meta name="apple-mobile-web-app-title" content="Fizmat">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <script src="../../assets/js/showdown.min.js"></script>
+    <script src="../../assets/js/ipfs.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
@@ -55,7 +56,6 @@
         <div class="db-menu">
             <a class="db-menu-li" id="menu-storage">Хранилище</a>
             <a class="db-menu-li" id="menu-my-files">Мои файлы</a>
-            <a class="db-menu-li" id="menu-upload-file">Загрузить файл</a>
             <a class="db-menu-li" id="menu-my-olymps">Мои олимпиады</a>
             <a class="db-menu-li" id="menu-account">Аккаунт</a>
         </div>
@@ -68,28 +68,43 @@
                 <div style="margin-top: 20px; margin-bottom: 20px; display: grid; grid-gap: 10px;">
 <!--                    <h3>Персональные данные</h3>-->
                     <h4 class="not-weight">ФИО</h4>
-<!--                    <h4 class="not-weight">Имя</h4>-->
-                    <input type="text" placeholder="Имя">
 <!--                    <h4 class="not-weight">Фамилия</h4>-->
-                    <input type="text" placeholder="Фамилия">
+                    <input id="LastNameInput" type="text" placeholder="Фамилия">
+<!--                    <h4 class="not-weight">Имя</h4>-->
+                    <input id="FirstNameInput" type="text" placeholder="Имя">
 <!--                    <h4 class="not-weight">Отчество</h4>-->
-                    <input type="text" placeholder="Отчество">
+                    <input id="AdditionNameInput" type="text" placeholder="Отчество">
                     <h4 class="not-weight">Дата рождения</h4>
                     <input type="date" id="birthDateInput" name="birth y-m-d"
                            value="2001-01-01"
                            min="1900-01-01" max="2022-01-01" style="width: min-content">
-                    <button><a>Сохранить</a></button>
+                    <button id="savePersonalDataButton"><a>Сохранить</a></button>
                 </div>
             </div>
             <div class="db-canvas-block db-canvas-my-files not-display" id="my-files">
                 <h1>Мои файлы</h1>
-            </div>
-            <div class="db-canvas-block db-canvas-upload-file not-display" id="upload-file">
-                <h1>Загрузить файл</h1>
+                <button id="uploadFileButton">
+                    <svg class="img-plus" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="459.325px" height="459.325px" viewBox="0 0 459.325 459.325" style="enable-background:new 0 0 459.325 459.325;"
+                         xml:space="preserve"><g><path d="M459.319,229.668c0,22.201-17.992,40.193-40.205,40.193H269.85v149.271c0,22.207-17.998,40.199-40.196,40.193
+		            c-11.101,0-21.149-4.492-28.416-11.763c-7.276-7.281-11.774-17.324-11.769-28.419l-0.006-149.288H40.181
+		            c-11.094,0-21.134-4.492-28.416-11.774c-7.264-7.264-11.759-17.312-11.759-28.413C0,207.471,17.992,189.475,40.202,189.475h149.267
+		            V40.202C189.469,17.998,207.471,0,229.671,0c22.192,0.006,40.178,17.986,40.19,40.187v149.288h149.282
+		            C441.339,189.487,459.308,207.471,459.319,229.668z"/></g>
+                    </svg>
+                    <a>Загрузить файл</a>
+                </button>
+                <div class="upload-file-window">
+                    <input class="input-file" id="fileUploadInput" type="file" style="width: max-content">
+                    <input class="input-gray" id="fileNameInput" placeholder="Название" type="text">
+                    <input class="input-gray" id="fileDescription" placeholder="Описание длкумента" type="text">
+                </div>
+                <div class="table-files">
+                    <a class="nofiles-text">Пока нет файлов</a>
+                </div>
             </div>
             <div class="db-canvas-block db-canvas-my-olymps not-display" id="my-olymps">
                 <h1>Мои олимпиады</h1>
-
                 <button>
                     <svg class="img-plus" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      width="459.325px" height="459.325px" viewBox="0 0 459.325 459.325" style="enable-background:new 0 0 459.325 459.325;"
@@ -97,9 +112,11 @@
 		            c-11.101,0-21.149-4.492-28.416-11.763c-7.276-7.281-11.774-17.324-11.769-28.419l-0.006-149.288H40.181
 		            c-11.094,0-21.134-4.492-28.416-11.774c-7.264-7.264-11.759-17.312-11.759-28.413C0,207.471,17.992,189.475,40.202,189.475h149.267
 		            V40.202C189.469,17.998,207.471,0,229.671,0c22.192,0.006,40.178,17.986,40.19,40.187v149.288h149.282
-		            C441.339,189.487,459.308,207.471,459.319,229.668z"/>
-                    </svg><a>Добавить олимпиаду</a>
-                </button></div>
+		            C441.339,189.487,459.308,207.471,459.319,229.668z"/></g>
+                    </svg>
+                    <a>Добавить олимпиаду</a>
+                </button>
+            </div>
         </div>
     </div>
 
@@ -118,6 +135,13 @@
 </footer>
 <script>
     $(document).ready(async function() {
+        // IPFS Node
+        // const ipfs = await window.Ipfs.create();
+        // const data = 'Hello, iaa2005';
+        // console.log(ipfs);
+        // const result = await ipfs.add(data);
+        // console.log(result);
+
         let today = new Date();
         let dd = today.getDate();
         let mm = today.getMonth() + 1; //January is 0!
@@ -159,19 +183,38 @@
             }, 1000);
         }
 
+        document.getElementById("savePersonalDataButton").onclick = function () {
+            let LastName = document.getElementById("LastNameInput").value;
+            let FirstName = document.getElementById("FirstNameInput").value;
+            let AdditionName = document.getElementById("AdditionNameInput").value;
+
+            let BirthDate = document.getElementById("birthDateInput").value;
+
+            console.log(LastName, FirstName, AdditionName, BirthDate);
+
+            db.collection("users").add({
+                first: FirstName,
+                last: LastName,
+                additional: AdditionName,
+                born: BirthDate
+            }).then((docRef) => {
+                console.log("Document written with ID: ", docRef.id);
+            }).catch((error) => {
+                console.error("Error adding document: ", error);
+            });
+        }
+
         document.getElementById("storage").classList.remove("not-display")
         document.getElementById("menu-storage").classList.add("db-menu-li-selected")
 
         document.getElementById("menu-account").onclick = function () {
             document.getElementById("storage").classList.add("not-display")
             document.getElementById("my-files").classList.add("not-display")
-            document.getElementById("upload-file").classList.add("not-display")
             document.getElementById("my-olymps").classList.add("not-display")
             document.getElementById("account").classList.remove("not-display")
 
             document.getElementById("menu-storage").classList.remove("db-menu-li-selected")
             document.getElementById("menu-my-files").classList.remove("db-menu-li-selected")
-            document.getElementById("menu-upload-file").classList.remove("db-menu-li-selected")
             document.getElementById("menu-my-olymps").classList.remove("db-menu-li-selected")
             document.getElementById("menu-account").classList.add("db-menu-li-selected")
         }
@@ -179,13 +222,11 @@
         document.getElementById("menu-storage").onclick = function () {
             document.getElementById("storage").classList.remove("not-display")
             document.getElementById("my-files").classList.add("not-display")
-            document.getElementById("upload-file").classList.add("not-display")
             document.getElementById("my-olymps").classList.add("not-display")
             document.getElementById("account").classList.add("not-display")
 
             document.getElementById("menu-storage").classList.add("db-menu-li-selected")
             document.getElementById("menu-my-files").classList.remove("db-menu-li-selected")
-            document.getElementById("menu-upload-file").classList.remove("db-menu-li-selected")
             document.getElementById("menu-my-olymps").classList.remove("db-menu-li-selected")
             document.getElementById("menu-account").classList.remove("db-menu-li-selected")
         }
@@ -193,27 +234,11 @@
         document.getElementById("menu-my-files").onclick = function () {
             document.getElementById("storage").classList.add("not-display")
             document.getElementById("my-files").classList.remove("not-display")
-            document.getElementById("upload-file").classList.add("not-display")
             document.getElementById("my-olymps").classList.add("not-display")
             document.getElementById("account").classList.add("not-display")
 
             document.getElementById("menu-storage").classList.remove("db-menu-li-selected")
             document.getElementById("menu-my-files").classList.add("db-menu-li-selected")
-            document.getElementById("menu-upload-file").classList.remove("db-menu-li-selected")
-            document.getElementById("menu-my-olymps").classList.remove("db-menu-li-selected")
-            document.getElementById("menu-account").classList.remove("db-menu-li-selected")
-        }
-
-        document.getElementById("menu-upload-file").onclick = function () {
-            document.getElementById("storage").classList.add("not-display")
-            document.getElementById("my-files").classList.add("not-display")
-            document.getElementById("upload-file").classList.remove("not-display")
-            document.getElementById("my-olymps").classList.add("not-display")
-            document.getElementById("account").classList.add("not-display")
-
-            document.getElementById("menu-storage").classList.remove("db-menu-li-selected")
-            document.getElementById("menu-my-files").classList.remove("db-menu-li-selected")
-            document.getElementById("menu-upload-file").classList.add("db-menu-li-selected")
             document.getElementById("menu-my-olymps").classList.remove("db-menu-li-selected")
             document.getElementById("menu-account").classList.remove("db-menu-li-selected")
         }
@@ -221,16 +246,15 @@
         document.getElementById("menu-my-olymps").onclick = function () {
             document.getElementById("storage").classList.add("not-display")
             document.getElementById("my-files").classList.add("not-display")
-            document.getElementById("upload-file").classList.add("not-display")
             document.getElementById("my-olymps").classList.remove("not-display")
             document.getElementById("account").classList.add("not-display")
 
             document.getElementById("menu-storage").classList.remove("db-menu-li-selected")
             document.getElementById("menu-my-files").classList.remove("db-menu-li-selected")
-            document.getElementById("menu-upload-file").classList.remove("db-menu-li-selected")
             document.getElementById("menu-my-olymps").classList.add("db-menu-li-selected")
             document.getElementById("menu-account").classList.remove("db-menu-li-selected")
         }
+
 
         setTimeout(function(){
             if (auth.currentUser == null) {
@@ -256,6 +280,15 @@
         fill: white;
         transition: 0.1s ease-in;
     }
+    .nofiles-text {
+        display: block;
+        font-size: 18px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: fit-content;
+    }
     h1 {
         font-size: 36px;
     }
@@ -266,9 +299,18 @@
     .not-weight {
         font-weight: 400;
     }
-    button {
+    .upload-file-window {
+        width: auto;
+        display: grid;
+        grid-gap: 10px;
+        background-color: white;
+        padding: 15px;
+        border-radius: 15px;
+    }
+    button, input:is([type="button"], [type="submit"], [type="reset"]), input[type="file"]::file-selector-button {
         display: flex;
-        margin-top: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
         font-size: 18px;
         font-weight: 500;
         letter-spacing: 0.5px;
@@ -283,10 +325,15 @@
         border-radius: 30px;
         transition: 0.1s ease-in;
     }
+    button, input:is([type="button"], [type="submit"], [type="reset"]), input[type="file"]::file-selector-button {
+        margin-right: 10px;
+    }
     button:hover .img-plus {
         fill: #0069d9;
     }
-    button:hover {
+    button:hover,
+    input:is([type="button"], [type="submit"], [type="reset"]):hover,
+    input[type="file"]::file-selector-button:hover {
         cursor: pointer;
         color: #0069d9;
         background-color: white;
@@ -309,6 +356,23 @@
         letter-spacing: 0.2px;
         font-size: 18px;
         font-weight: 500;
+    }
+    .input-file {
+        padding: 0;
+        height: fit-content;
+        border-radius: 0px;
+        background: none;
+        margin-top: 0;
+    }
+    .input-gray {
+        background-color: rgb(241 241 243);
+        width: -webkit-fill-available;
+    }
+    .table-files {
+        background-color: white;
+        padding: 15px;
+        border-radius: 15px;
+        margin-top: 15px;
     }
     .dashboard-header {
         display: flex;
