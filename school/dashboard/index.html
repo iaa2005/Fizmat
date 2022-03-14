@@ -73,7 +73,7 @@
 <!--                    <h4 class="not-weight">Имя</h4>-->
                     <input id="FirstNameInput" type="text" placeholder="Имя">
 <!--                    <h4 class="not-weight">Отчество</h4>-->
-                    <input id="AdditionNameInput" type="text" placeholder="Отчество">
+                    <input id="MiddleNameInput" type="text" placeholder="Отчество">
                     <h4 class="not-weight">Дата рождения</h4>
                     <input type="date" id="birthDateInput" name="birth y-m-d"
                            value="2001-01-01"
@@ -94,10 +94,11 @@
                     </svg>
                     <a>Загрузить файл</a>
                 </button>
-                <div class="upload-file-window">
+                <div id="upload-file-window" class="upload-file-window not-display">
                     <input class="input-file" id="fileUploadInput" type="file" style="width: max-content">
                     <input class="input-gray" id="fileNameInput" placeholder="Название" type="text">
                     <input class="input-gray" id="fileDescription" placeholder="Описание длкумента" type="text">
+                    <button><a>Загрузить</a></button>
                 </div>
                 <div class="table-files">
                     <a class="nofiles-text">Пока нет файлов</a>
@@ -186,22 +187,16 @@
         document.getElementById("savePersonalDataButton").onclick = function () {
             let LastName = document.getElementById("LastNameInput").value;
             let FirstName = document.getElementById("FirstNameInput").value;
-            let AdditionName = document.getElementById("AdditionNameInput").value;
-
+            let MiddleName = document.getElementById("MiddleNameInput").value;
             let BirthDate = document.getElementById("birthDateInput").value;
-
-            console.log(LastName, FirstName, AdditionName, BirthDate);
-
-            db.collection("users").add({
+            // console.log(LastName, FirstName, MiddleName, BirthDate);
+            // console.log(auth.currentUser.uid);
+            db.collection("users").doc(auth.currentUser.uid).set({
                 first: FirstName,
                 last: LastName,
-                additional: AdditionName,
+                middle: MiddleName,
                 born: BirthDate
-            }).then((docRef) => {
-                console.log("Document written with ID: ", docRef.id);
-            }).catch((error) => {
-                console.error("Error adding document: ", error);
-            });
+            })
         }
 
         document.getElementById("storage").classList.remove("not-display")
@@ -255,10 +250,32 @@
             document.getElementById("menu-account").classList.remove("db-menu-li-selected")
         }
 
+        let openedUploadFileWindow = false;
 
+        document.getElementById("uploadFileButton").onclick = function () {
+            if (openedUploadFileWindow) {
+                document.getElementById("upload-file-window").classList.add("not-display");
+                openedUploadFileWindow = !openedUploadFileWindow
+            } else {
+                document.getElementById("upload-file-window").classList.remove("not-display");
+                openedUploadFileWindow = !openedUploadFileWindow
+            }
+        }
         setTimeout(function(){
             if (auth.currentUser == null) {
                 window.location.href = '/school';
+            } else {
+                try {
+                    db.collection("users").doc(auth.currentUser.uid).get().then(querySnapshot => {
+                        let data = querySnapshot.data();
+                            document.getElementById("LastNameInput").value = data.last
+                            document.getElementById("FirstNameInput").value = data.first
+                            document.getElementById("MiddleNameInput").value = data.middle
+                            document.getElementById("birthDateInput").value = data.born
+                    });
+                } finally {
+                    escape;
+                }
             }
         }, 2000);
 
