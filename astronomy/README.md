@@ -20,16 +20,16 @@
 - [Олимпиада школьников "Ломоносов". Космонавтика. 2021-2022](../astronomy-files/lomonosov-kosmonavtika-2021-2022.pdf)
 - [Большая подборка для подготовки к региону](../astronomy-files/Большая-подборка-для-региона-21-22.zip)
 - [МЭ 2021-2022 9 класс](../astronomy-files/Астрономия_задания_2021_9_кл.pdf) — [МЭ 2021-2022 10 класс](../astronomy-files/Астрономия_задания_2021_10_кл.pdf) — [МЭ 2021-2022 11 класс](../astronomy-files/Астрономия_задания_2021_11_кл.pdf)
-- [Пробный регион 9 класс 2021 нояб](../astronomy-files/Пробный-регион-9кл-2021-нояб.pdf)
-- [Пробный регион 10-11 класс 2021 нояб](../astronomy-files/Пробный-регион-10-11кл-2021-нояб.pdf)
-- <a>Подборка задач по астрономии для подготовки к региону (9 частей) — </a>[Архив](../astronomy-files/podborka-zadach-dlya-podgotovki-regionu.zip)
-- [Справочные Данные из IAO](../astronomy-files/Справочные-Данные-IAO.pdf)
+- [Пробный регион 9 класс 2021 нояб](../astronomy-files/astro-files/Пробный-регион-9кл-2021-нояб.pdf)
+- [Пробный регион 10-11 класс 2021 нояб](../astronomy-files/astro-files/Пробный-регион-10-11кл-2021-нояб.pdf)
+- <a>Подборка задач по астрономии для подготовки к региону (9 частей) — </a>[Архив](../astronomy-files/astro-files/podborka-zadach-dlya-podgotovki-regionu.zip)
+- [Справочные Данные из IAO](../astronomy-files/astro-files/Справочные-Данные-IAO.pdf)
 - <a>*Другие задачи*</a>
-    - [Спиральная галактика](../astronomy-files/Спиральная-галактика.pdf)<!-- Муницип 2017-2018 Задача 6 10 класс -->
+    - [Спиральная галактика](../astronomy-files/astro-files/Спиральная-галактика.pdf)<!-- Муницип 2017-2018 Задача 6 10 класс -->
 - <a>*Упражнения из сборника задач В.Б. Игнатьева*</a>
-    - [293. Марс и Антарес](../astronomy-files/task293.pdf)
-    - [1410. Задача про двойную звезду](../astronomy-files/task1410.pdf)
-    - [1447. Сфера Дайсона](../astronomy-files/task1447.pdf)
+    - [293. Марс и Антарес](../astronomy-files/astro-files/task293.pdf)
+    - [1410. Задача про двойную звезду](../astronomy-files/astro-files/task1410.pdf)
+    - [1447. Сфера Дайсона](../astronomy-files/astro-files/task1447.pdf)
 - [*МОШ 2017-2018*](https://mos.olimpiada.ru/upload/files/Archive_tasks_2013-%2E%2E%2E/2017-18/astr/tasks-astr-10-11-teor-final-17-8.pdf)
     - [Задачи с решениями](https://mosastro.olimpiada.ru/upload/files/mos2018/mosgor_2018_teor_10-11_solutions.pdf)
 - [Массы и размеры звезд](https://reader.lecta.rosuchebnik.ru/demo/7934-62/data/chapters/Chapter23/index.xhtml)
