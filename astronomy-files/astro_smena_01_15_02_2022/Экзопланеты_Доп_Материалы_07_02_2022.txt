@@ -1,0 +1,7 @@
+Сайт с актуальной информацией по экзопланетам:
+
+https://exoplanetarchive.ipac.caltech.edu/index.html
+
+в частности, вот здесь много красивых графиков по подтверждённым планетам и кандидатам:
+
+https://exoplanetarchive.ipac.caltech.edu/exoplanetplots/#confirmed
