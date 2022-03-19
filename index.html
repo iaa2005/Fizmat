@@ -61,7 +61,7 @@
 <!--        </form>-->
         <p class="like">
             <!-- LikeBtn.com BEGIN -->
-            <span class="likebtn-wrapper" data-theme="custom" data-icon_l="thmb7-u" data-icon_d="thmb7-d" data-icon_l_c="#343742" data-icon_l_c_v="#ffffff" data-icon_d_c="#343742" data-icon_d_c_v="#ffffff" data-label_c="#343742" data-label_c_v="#ffffff" data-counter_l_c="#959aa2" data-counter_d_c="#959aa2" data-bg_c_v="#343742" data-brdr_c="#343742" data-counter_fs="b" data-lang="ru" data-site_id="61687dc7943ec90162a11416"></span>
+            <span class="likebtn-wrapper" data-theme="custom" data-icon_l="thmb7-u" data-icon_d="thmb7-d" data-icon_l_c="var(--color-primary)" data-icon_l_c_v="#ffffff" data-icon_d_c="var(--color-primary)" data-icon_d_c_v="#ffffff" data-label_c="var(--color-primary)" data-label_c_v="#ffffff" data-counter_l_c="#959aa2" data-counter_d_c="#959aa2" data-bg_c_v="var(--color-primary)" data-brdr_c="var(--color-primary)" data-counter_fs="b" data-lang="ru" data-site_id="61687dc7943ec90162a11416"></span>
             <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
             <!-- LikeBtn.com END -->
         </p>
@@ -198,6 +198,9 @@
 </footer>
 </body>
 <style>
+    :root {
+        --color-primary: #343742;
+    }
     body {
         margin: 0;
         background-color: white;
@@ -207,28 +210,28 @@
         font-size: 18px;
         font-weight: 300;
         margin-bottom: 20px;
-        color: #343742;
+        color: var(--color-primary);
         text-decoration: none;
     }
     h2 {
         font-size: 26px;
         font-weight: 700;
         margin-bottom: 20px;
-        color: #343742;
+        color: var(--color-primary);
         letter-spacing: 0.5px;
     }
     h1 {
         font-size: 36px;
         font-weight: 700;
         margin-bottom: 20px;
-        color: #343742;
+        color: var(--color-primary);
         letter-spacing: 0.5px;
     }
     h3 {
         font-size: 22px;
         font-weight: 500;
         margin-bottom: 20px;
-        color: #343742;
+        color: var(--color-primary);
         letter-spacing: 0.5px;
     }
     .title-header {
@@ -244,7 +247,7 @@
         font-weight: 500;
     }
     .logo {
-        width: min(475px, 65vw);
+        width: min(380px, 58vw);
         margin-bottom: 30px;
     }
     .telegram-button {
@@ -252,18 +255,18 @@
         width: fit-content;
         border-radius: 50px;
         height: fit-content;
-        background-color: #343742;
-        border: solid 3px #343742;
+        background-color: var(--color-primary);
+        border: solid 3px var(--color-primary);
         display: inline-flex;
         transition: 0.3s;
     }
     .telegram-button:hover {
         background-color: rgba(0, 0, 0, 0);
-        border: solid 3px #343742;
+        border: solid 3px var(--color-primary);
         cursor: pointer;
     }
     .telegram-button:hover .button-text {
-        color: #343742;
+        color: var(--color-primary);
     }
     .button-text {
         font-family: 'Montserrat', sans-serif;
@@ -306,7 +309,7 @@
         color: #f1f1f1;
     }
     .about-school {
-        background-color: #343742;
+        background-color: var(--color-primary);
         /*width: auto;*/
         padding: 75px 100px;
     }
@@ -356,7 +359,7 @@
         font-size: 18px;
         text-align: justify;
         transition: 0.3s;
-        color: #343742;
+        color: var(--color-primary);
     }
     .h-table-2 {
         font-weight: 300;
@@ -401,7 +404,7 @@
         transition: 0.3s;
     }
     .github:hover svg{
-        fill: #343742;
+        fill: var(--color-primary);
         transition: 0.3s;
     }
     ul a, ol a {
@@ -409,7 +412,7 @@
         text-decoration: none;
         font-weight: 300;
         line-height: 30px;
-        color: #343742;
+        color: var(--color-primary);
         transition: 0.1s;
     }
     ul li, ol li {
@@ -417,25 +420,25 @@
         text-decoration: none;
         font-weight: 300;
         line-height: 21px;
-        color: #343742;
+        color: var(--color-primary);
     }
     .section p {
         font-size: 20px;
         text-decoration: none;
         line-height: 26px;
-        color: #343742;
+        color: var(--color-primary);
     }
     .section p a {
         font-size: 20px;
         text-decoration: none;
         line-height: 26px;
-        color: #343742;
+        color: var(--color-primary);
     }
     ul strong {
         font-size: 20px;
         line-height: 26px;
         text-decoration: none;
-        color: #343742;
+        color: var(--color-primary);
     }
     .like {
         margin-top: 25px;
@@ -529,7 +532,7 @@
     }
     .google-text {
         width: fit-content;
-        color: #343742;
+        color: var(--color-primary);
     }
     .section-new {
         margin-bottom: 50px;
@@ -579,7 +582,7 @@
         font-size: min(10vw, 80px);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        color: #343742;
+        color: var(--color-primary);
         display: -webkit-inline-box;
     }
     .icon-sponsor {
@@ -696,7 +699,7 @@
             font-size: 28px;
             font-weight: 700;
             margin-bottom: 20px;
-            color: #343742;
+            color: var(--color-primary);
             letter-spacing: 0.5px;
         }
         ul {
@@ -713,25 +716,25 @@
             text-decoration: none;
             font-weight: 300;
             line-height: 20px;
-            color: #343742;
+            color: var(--color-primary);
         }
         .section p {
             font-size: 14px;
             text-decoration: none;
             line-height: 18px;
-            color: #343742;
+            color: var(--color-primary);
         }
         .section p a {
             font-size: 14px;
             text-decoration: none;
             line-height: 18px;
-            color: #343742;
+            color: var(--color-primary);
         }
         ul strong, ol strong {
             font-size: 14px;
             line-height: 18px;
             text-decoration: none;
-            color: #343742;
+            color: var(--color-primary);
         }
         .support-div {
             padding: 50px;
@@ -755,7 +758,7 @@
         }
         ul li::before {
             content: "\2022";
-            color: #343742;
+            color: var(--color-primary);
             font-size: 40px;
             line-height: 16px;
             margin-right: 5px;
@@ -766,7 +769,7 @@
         }
         ul li ul li::before {
             content: "◦";
-            color: #343742;
+            color: var(--color-primary);
             font-size: 13px;
             line-height: 16px;
             margin-right: 5px;

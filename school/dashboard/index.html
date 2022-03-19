@@ -33,6 +33,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <script src="../../assets/js/showdown.min.js"></script>
     <script src="../../assets/js/ipfs.min.js"></script>
+    <script src="../../assets/js/calendar.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
@@ -106,6 +107,19 @@
             </div>
             <div class="db-canvas-block db-canvas-my-olymps not-display" id="my-olymps">
                 <h1>Мои олимпиады</h1>
+                <div class="calendar">
+                    <div class="header-calendar">
+                        <a style="font-size: 21px; font-weight: 600; margin-left: 15px" id="month-title">Месяц</a>
+                        <div style="display: flex">
+                            <button class="left-right"><img id="prev-month" class="left-right-img" style="transform: rotate(90deg)" src="../../assets/images/arrow-icon.svg"></button>
+                            <button class="left-right"><img id="next-month" class="left-right-img" style="transform: rotate(-90deg)" src="../../assets/images/arrow-icon.svg"></button>
+                        </div>
+                    </div>
+                    <table class="calendar-weeks">
+                        <div class="calendar-days">
+                        </div>
+                    </table>
+                </div>
                 <button>
                     <svg class="img-plus" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      width="459.325px" height="459.325px" viewBox="0 0 459.325 459.325" style="enable-background:new 0 0 459.325 459.325;"
@@ -120,7 +134,6 @@
             </div>
         </div>
     </div>
-
 </div>
 <footer>
     <div>
@@ -142,10 +155,85 @@
         // console.log(ipfs);
         // const result = await ipfs.add(data);
         // console.log(result);
+        let DATE_CALENDAR = new Date()
+
+        function createCalendar(date) {
+            let days = {
+                "Mo": "Пн",
+                "Tu": "Вт",
+                "We": "Ср",
+                "Th": "Чт",
+                "Fr": "Пт",
+                "Sa": "Сб",
+                "Su": "Вс"
+            }
+            let weeks = calendar(date, {
+                weekStartDay: 1,
+                formatHeader: date => days[date.toString().slice(0, 2)],
+                formatDate: date => date.getDate().toString(),
+                formatSiblingMonthDate: date => date.getDate().toString()
+            })
+            // console.log(weeks)
+
+            let calendar_html = ""
+            let i = 1
+            for (let week of weeks) {
+                // calendar_html += '<tr class="calendar-days">'
+                for (let day of week) {
+                    // console.log(day, new Date().getDate(), date.getMonth(), new Date().getMonth())
+                    if (date.getFullYear() === new Date().getFullYear() && Number(day) === new Date().getDate() && date.getMonth() === new Date().getMonth()) {
+                        calendar_html += '<div class="td-cell"><a class="today">' + day + '</a></div>'
+                    } else if (1 !== Number(day) && i === 1) {
+                        calendar_html += '<div class="td-cell"><a class="prev-month-days">' + day + '</a></div>'
+                    } else if (1 === Number(day) && i === 1) {
+                        calendar_html += '<div class="td-cell"><a>' + day + '</a></div>'
+                        i = 0
+                    } else if (1 === Number(day) && i === 0) {
+                        calendar_html += '<div class="td-cell"><a class="prev-month-days">' + day + '</a></div>'
+                        i = 1
+                    } else {
+                        calendar_html += '<div class="td-cell"><a>' + day + '</a></div>'
+                    }
+                    // console.log(i, Number(day))
+                }
+                // calendar_html += '</tr>'
+            }
+            document.querySelector('.calendar-weeks').innerHTML = calendar_html;
+
+            let mm = date.getMonth() + 1;
+            let yyyy = date.getFullYear();
+            let months = {
+                1: "Январь",
+                2: "Февраль",
+                3: "Март",
+                4: "Апрель",
+                5: "Май",
+                6: "Июнь",
+                7: "Июль",
+                8: "Август",
+                9: "Сентябрь",
+                10: "Октябрь",
+                11: "Ноябрь",
+                12: "Декабрь"
+            }
+            document.querySelector('#month-title').innerText = yyyy.toString() + " " + months[Number(mm)]
+        }
+
+        createCalendar(DATE_CALENDAR)
+
+        document.getElementById("prev-month").onclick = function () {
+            DATE_CALENDAR.setMonth(DATE_CALENDAR.getMonth() - 1);
+            createCalendar(DATE_CALENDAR)
+        }
+
+        document.getElementById("next-month").onclick = function () {
+            DATE_CALENDAR.setMonth(DATE_CALENDAR.getMonth() + 1);
+            createCalendar(DATE_CALENDAR)
+        }
 
         let today = new Date();
         let dd = today.getDate();
-        let mm = today.getMonth() + 1; //January is 0!
+        let mm = today.getMonth() + 1;
         let yyyy = today.getFullYear();
         if (dd < 10) { dd = '0' + dd; }
         if (mm < 10) { mm = '0' + mm; }
@@ -288,6 +376,76 @@
         margin: 0;
         color: #343742;
     }
+    .prev-month-days {
+        color: #868789;
+    }
+    .today {
+        color: #4451a0;
+    }
+    .td-cell {
+        display: block;
+        width: 25px;
+        height: 25px;
+        /*background-color: rgb(241 241 243);*/
+        border-radius: 70px;
+        padding: 10px;
+        text-align: -webkit-center;
+    }
+    .calendar-weeks {
+        grid-gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+    .calendar {
+        margin-top: 20px;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 15px;
+        background-color: white;
+        padding: 20px;
+    }
+    .header-calendar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .left-right {
+        display: flex;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        color: white;
+        background-color: rgb(241 241 243);
+        border: none;
+        width: fit-content;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 30px;
+        transition: 0.1s ease-in;
+    }
+    .left-right:hover {
+        color: white;
+        background-color: #d0d1d2;
+        border: none;
+        width: fit-content;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 30px;
+        transition: 0.1s ease-in;
+    }
+    .left-right-img {
+        width: 20px;
+        height: 20px;
+    }
     .img-plus {
         margin-top: auto;
         margin-bottom: auto;
@@ -396,7 +554,7 @@
         align-items: center;
     }
     .fizmat-logo {
-        height: 54px;
+        height: 50px;
     }
     .account-logout {
         border-radius: 50px;
