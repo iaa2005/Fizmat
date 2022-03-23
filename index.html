@@ -40,7 +40,10 @@
 <body>
 <div class="title-header">
 <!--    <button id="buttonSignInGoogle" class="sign-with-google"><a class="button-text google-text">Войти с помощью</a><img src="assets/images/google-440.svg" class="google-icon"></button>-->
-    <a style="margin: 0;" href="https://fizmat.ga/"><img class="logo" src="assets/images/fizmat-logo.svg"></a>
+    <a style="margin: 0; display: flex;" href="https://fizmat.ga/">
+        <img class="back-logo" src="assets/images/fizmat-logo.svg">
+        <img class="logo" src="assets/images/fizmat-logo.svg">
+    </a>
 <!--    <a style="margin: 0;" href="https://fizmat.ga/"><img class="logo" src="assets/images/fizmat in width-3.gif"></a>-->
     <a class="title-text">Fizmat — вся физика, астрономия и книги на одном сайте</a>
     <div class="tel-like">
@@ -68,14 +71,19 @@
     </div>
 </div>
 <div class="about-school">
-    <h4>New (Скоро)</h4>
+    <h4>New</h4>
     <h1>Fizmat School</h1>
     <h2>Органайзер олимпиад. Удобное хранилище документов и аккаунтов для учебы.</h2>
     <h3>> Безопасное хранилище аккаунтов и паролей</h3>
     <h3>> Загружайте и храните файлы большого размера</h3>
     <h3>> Бесплатное неограниченное хранилище файлов</h3>
-    <h3>> Делайте свой «календарь» олимпиад</h3>
+    <h3>> Составляйте свой «календарь» олимпиад</h3>
     <h3>> Делитесь знаниями с другими участниками Fizmat</h3>
+    <form action="https://fizmat.ga/school" style="width: fit-content; margin-left: auto; margin-right: auto; margin-top: 20px;">
+        <button class="school-button" >
+            <a class="button-school-text">Перейти в School</a>
+        </button>
+    </form>
 </div>
 <div class="big-menu">
     <div class="table">
@@ -200,6 +208,7 @@
 <style>
     :root {
         --color-primary: #343742;
+        --color-orange: #e84f08;
     }
     body {
         margin: 0;
@@ -235,20 +244,37 @@
         letter-spacing: 0.5px;
     }
     .title-header {
-        padding-left: 100px;
-        padding-top: 70px;
-        padding-bottom: 130px;
-        padding-right: 130px;
-        width: auto;
-        display: grid;
+        padding-left: 200px;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        padding-right: 200px;
+        width: -webkit-fill-available;
+        display: inline-grid;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     .title-text {
+        margin-top: 40px;
+        text-align: center;
         font-size: 21px;
         font-weight: 500;
     }
     .logo {
         width: min(380px, 58vw);
         margin-bottom: 30px;
+        /*position: absolute;*/
+        /*z-index: 2;*/
+    }
+    .back-logo {
+        position: absolute;
+        width: min(380px, 58vw);
+        margin-bottom: 30px;
+        background: url(assets/images/fizmat-logo.svg);
+        filter: blur(30px);
+        opacity: 0.8;
+        /*z-index: 1;*/
+
     }
     .telegram-button {
         margin-top: 10px;
@@ -276,6 +302,33 @@
         transition: 0.3s;
         font-weight: 500;
     }
+    .school-button {
+        margin-top: 10px;
+        width: fit-content;
+        border-radius: 50px;
+        height: fit-content;
+        background-color: var(--color-orange);
+        border: solid 3px var(--color-orange);
+        display: inline-flex;
+        transition: 0.3s;
+    }
+    .school-button:hover {
+        background-color: rgba(0, 0, 0, 0);
+        /*background-color: white;*/
+        border: solid 3px var(--color-orange);
+        cursor: pointer;
+    }
+    .school-button:hover .button-school-text {
+        color: var(--color-orange);
+    }
+    .button-school-text {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 18px;
+        margin: 11px;
+        transition: 0.3s;
+        font-weight: 500;
+    }
     .arrow-right {
         height: 21px;
         margin-left: 5px;
@@ -284,34 +337,42 @@
     }
     /* School */
     .about-school h4 {
+        text-align: center;
         margin-top: 5px;
         margin-bottom: 0;
-        font-size: 21px;
+        font-size: 18px;
         font-weight: 300;
-        color: #e84f08;
+        color: var(--color-orange);
     }
     .about-school h3 {
         margin-top: 5px;
         margin-bottom: 0;
-        font-size: 21px;
+        font-size: 18px;
         font-weight: 300;
         color: #f1f1f1;
     }
     .about-school h2 {
-        font-size: 24px;
+        text-align: center;
+        font-size: 21px;
         font-weight: 300;
         color: #f1f1f1;
     }
     .about-school h1 {
+        text-align: center;
         margin-top: 10px;
         font-size: 48px;
         font-weight: 600;
         color: #f1f1f1;
     }
     .about-school {
+        background-image: url(school/images/file-20201207-15-1q9gwxh-2.jpg);
         background-color: var(--color-primary);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         /*width: auto;*/
         padding: 75px 100px;
+        background-blend-mode: darken;
     }
     /*----------*/
     .big-menu {
@@ -472,7 +533,6 @@
         width: 40vw;
         padding-left: 30px;
     }
-
     .physics:hover {
         background-color: #eef3ff;
     }
@@ -649,6 +709,18 @@
             grid-row-gap: 40px;
             grid-column-gap: 40px;
         }
+        .logo {
+            /*width: -webkit-fill-available;*/
+            /*margin-bottom: 30px;*/
+        }
+        .back-logo {
+            display: none;
+        }
+        .title-header {
+            padding: 50px;
+            width: auto;
+            display: grid;
+        }
         .tel-like {
             display: grid;
         }
@@ -663,15 +735,6 @@
     @media screen and (max-width: 540px) {
         .button-sponsor {
             margin-left: 0px;
-        }
-        .logo {
-            width: -webkit-fill-available;
-            /*margin-bottom: 30px;*/
-        }
-        .title-header {
-            padding: 50px;
-            width: auto;
-            display: grid;
         }
         .big-menu {
             padding: 50px;
