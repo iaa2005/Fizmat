@@ -1,4 +1,11 @@
-Решенные задания по информатике на Python или C++
+## Книги по программированию
+- [Антти Лааксонен. Олимпиадное программирование. 2018.pdf MUST HAVE](../coding-files/Antti_Laaxonen_Olimpiadnoe_programmirovanie_2018.pdf)
+- [Программирование на Rust 2021 Stiv Klabnik, Kerol Nikols](../coding-files/Programmirovanie_na_Rust_2021_Stiv_Klabnik_Kerol_Nikols.pdf)
+- [Автоматизация рутинных задач при помощи Python](../coding-files/Автоматизация_рутинных_задач_при_помощи_Python_RUS.pdf)
+- [Блэнди Орендорф Программирование](../coding-files/Блэнди_Орендорф_Программирование.pdf)
+- [Глубокое обучение на Python](../coding-files/Глубокое_обучение_на_Python_(PDFDrive).pdf)
+
+## Решенные задания по информатике на Python или C++
 - [FTL 10fm IF Classwork 10A (2021-11-09)](../coding-files/FTL-10fm-IF-Classwork-10A-(2021-11-09).zip)
 - [FTL 10fm IF simple](../coding-files/FTL-10fm-IF-simple.zip)
 - [FTL 10fm NO IF! simple tasks](../coding-files/FTL-10fm-NO-IF!-simple-tasks.zip)

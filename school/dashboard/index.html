@@ -175,24 +175,29 @@
             })
             // console.log(weeks)
 
+            function chooseDayInCal(date) {
+                
+            }
+
+            // <div class="tags-div"><div class="orange-tag"></div><div class="orange-tag">
             let calendar_html = ""
             let i = 1
             for (let week of weeks) {
-                // calendar_html += '<tr class="calendar-days">'
                 for (let day of week) {
-                    // console.log(day, new Date().getDate(), date.getMonth(), new Date().getMonth())
-                    if (date.getFullYear() === new Date().getFullYear() && Number(day) === new Date().getDate() && date.getMonth() === new Date().getMonth()) {
-                        calendar_html += '<div class="td-cell"><a class="today">' + day + '</a></div>'
-                    } else if (1 !== Number(day) && i === 1) {
-                        calendar_html += '<div class="td-cell"><a class="prev-month-days">' + day + '</a></div>'
-                    } else if (1 === Number(day) && i === 1) {
+                    if (["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"].findIndex(element => { if (element === day) {return true;} }) !== -1 ) {
                         calendar_html += '<div class="td-cell"><a>' + day + '</a></div>'
+                    } else if (date.getFullYear() === new Date().getFullYear() && Number(day) === new Date().getDate() && date.getMonth() === new Date().getMonth()) {
+                        calendar_html += '<button class="td-cell days-buttons" onclick=""><a class="today">' + day + '</a></button>'
+                    } else if (1 !== Number(day) && i === 1) {
+                        calendar_html += '<button class="td-cell days-buttons"><a class="prev-month-days">' + day + '</a></button>'
+                    } else if (1 === Number(day) && i === 1) {
+                        calendar_html += '<button class="td-cell days-buttons"><a>' + day + '</a>' + '</button>';
                         i = 0
                     } else if (1 === Number(day) && i === 0) {
-                        calendar_html += '<div class="td-cell"><a class="prev-month-days">' + day + '</a></div>'
+                        calendar_html += '<button class="td-cell days-buttons"><a class="prev-month-days">' + day + '</a></button>'
                         i = 1
                     } else {
-                        calendar_html += '<div class="td-cell"><a>' + day + '</a></div>'
+                        calendar_html += '<button class="td-cell days-buttons"><a>' + day + '</a></button>'
                     }
                     // console.log(i, Number(day))
                 }
@@ -279,7 +284,7 @@
             let BirthDate = document.getElementById("birthDateInput").value;
             // console.log(LastName, FirstName, MiddleName, BirthDate);
             // console.log(auth.currentUser.uid);
-            db.collection("users").doc(auth.currentUser.uid).set({
+            db.collection("users").doc(auth.currentUser.uid).collection("data").doc("personal").set({
                 first: FirstName,
                 last: LastName,
                 middle: MiddleName,
@@ -354,7 +359,7 @@
                 window.location.href = '/school';
             } else {
                 try {
-                    db.collection("users").doc(auth.currentUser.uid).get().then(querySnapshot => {
+                    db.collection("users").doc(auth.currentUser.uid).collection("data").doc("personal").get().then(querySnapshot => {
                         let data = querySnapshot.data();
                             document.getElementById("LastNameInput").value = data.last
                             document.getElementById("FirstNameInput").value = data.first
@@ -375,6 +380,29 @@
         font-family: 'Montserrat', sans-serif;
         margin: 0;
         color: #343742;
+    }
+    /* Colors */
+    .pink { background-color: #e91e63; }
+    .red { background-color: #e51c23; }
+    .orange { background-color: #ff5722; }
+    .yellow { background-color: #ffeb3b; }
+    .green { background-color: #29c455; }
+    .blue { background-color: #03a9fa; }
+    .purple { background-color: #673ab7; }
+    .brown { background-color: #795548; }
+    .gray { background-color: #70848d; }
+    /* ------------ */
+    .tags-div {
+        width: -webkit-min-content;
+        display: flex;
+        grid-auto-flow: row;
+        grid-gap: 2px;
+        margin: auto;
+    }
+    .tag {
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
     }
     .prev-month-days {
         color: #9b9c9e;
@@ -481,7 +509,7 @@
         display: grid;
         grid-gap: 10px;
         background-color: white;
-        padding: 15px;
+        padding: 20px;
         border-radius: 15px;
     }
     button, input:is([type="button"], [type="submit"], [type="reset"]), input[type="file"]::file-selector-button {
@@ -544,6 +572,22 @@
     .input-gray {
         background-color: rgb(241 241 243);
         width: -webkit-fill-available;
+    }
+    .days-buttons {
+        transition: 0.1s ease-in;
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        border-radius: 50px;
+        padding: 10px;
+        background-color: white;
+        color: #343742;
+        border: none;
+    }
+    .days-buttons:hover {
+        color: #343742;
+        background-color: rgb(241 241 243);
+        border: none;
     }
     .table-files {
         background-color: white;
