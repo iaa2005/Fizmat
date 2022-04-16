@@ -1,6 +1,6 @@
 ## Важные данные
-- [Все формулы по астрономии (made by @iaa2005)](../astro-files/astronomy-files/formulas-by-iaa2005.pdf)
-- [Астрадь](../astronomy-files/astro-notebook.pdf)
+- [Все формулы по астрономии (made by @iaa2005)](../astronomy-files/astro-files/formulas-by-iaa2005.pdf)
+- [Астрадь](../astronomy-files/astro-files/astro-notebook.pdf)
 
 ## Сурдин
 - [Сурдин В.Г. Галактики (Астрономия) — 2013](../astronomy-files/astro-files/78063_88fd4755d57baaca609b7084b61406c6.pdf)
