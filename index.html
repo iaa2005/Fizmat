@@ -266,15 +266,24 @@
         /*position: absolute;*/
         /*z-index: 2;*/
     }
+    /* The animation code */
+    @keyframes back-logo-anim {
+        0%   {opacity: 0.00;}
+        45%  {opacity: 1.00;}
+        55%  {opacity: 1.00;}
+        100% {opacity: 0.00;}
+    }
     .back-logo {
         position: absolute;
         width: min(380px, 58vw);
         margin-bottom: 30px;
         background: url(assets/images/fizmat-logo.svg);
-        filter: blur(30px);
-        opacity: 0.8;
+        filter: blur(30px)saturate(200%);
+        opacity: 1;
         /*z-index: 1;*/
-
+        animation-name: back-logo-anim;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
     }
     .telegram-button {
         margin-top: 10px;
