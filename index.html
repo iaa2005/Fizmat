@@ -86,6 +86,10 @@
 <!--    </form>-->
 <!--</div>-->
 <div class="big-menu">
+    <div class="search">
+        <input class="search-input" type="text" id="search-input" placeholder="Найти">
+        <button class="search-button"><img class="search-image" src="assets/images/magnifyingglass@2x.png"></button>
+    </div>
     <div class="table">
         <form action="physics/">
             <button class="table-in physics">
@@ -384,6 +388,37 @@
         background-blend-mode: darken;
     }
     /*----------*/
+    /*Search box*/
+    .search {
+        margin-left: auto;
+        margin-bottom: 40px;
+        width: 300px;
+        padding: 10px 18px;
+        border-radius: 50px;
+        /*background: linear-gradient(90deg, rgba(88, 187, 161, 0.6) 33%, rgba(140, 60, 180, 0.6) 66%, rgba(255, 40, 90, 0.6) 100%);*/
+        background: var(--color-primary);
+        backdrop-filter: blur(10px);
+        display: flex;
+    }
+    .search-input {
+        background: none;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        width: -webkit-fill-available;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .search-button {
+        background: none;
+        border: none;
+    }
+    .search-image {
+        width: 20px;
+        height: 20px;
+    }
+    /*—————————————————*/
     .big-menu {
         background-color: rgb(241 241 243);
         background-size: 500px;
