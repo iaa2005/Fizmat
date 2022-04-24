@@ -33,7 +33,7 @@
     <meta name="apple-mobile-web-app-title" content="Fizmat">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <script src="../assets/js/showdown.min.js"></script>
+    <script src="https://fizmat.ga/assets/js/showdown.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/index.js"></script>
 </head>
@@ -86,10 +86,15 @@
 <!--    </form>-->
 <!--</div>-->
 <div class="big-menu">
-    <div class="search">
-        <input class="search-input" type="text" id="search-input" placeholder="Найти">
-        <button class="search-button"><img class="search-image" src="assets/images/magnifyingglass@2x.png"></button>
-    </div>
+<!--    <div style="position: absolute">-->
+<!--        <div class="search">-->
+<!--            <input class="search-input" type="text" id="search-input" placeholder="Найти">-->
+<!--            <button class="search-button"><img class="search-image" src="assets/images/magnifyingglass@2x.png"></button>-->
+<!--        </div>-->
+<!--        <div id="search-suggest" class="search-suggest">-->
+
+<!--        </div>-->
+<!--    </div>-->
     <div class="table">
         <form action="physics/">
             <button class="table-in physics">
@@ -390,8 +395,9 @@
     /*----------*/
     /*Search box*/
     .search {
+        /*position: absolute;*/
         margin-left: auto;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
         width: 300px;
         padding: 10px 18px;
         border-radius: 50px;
@@ -418,6 +424,17 @@
         width: 20px;
         height: 20px;
     }
+    .search-suggest {
+        position: absolute;
+        padding: 15px;
+        background: white;
+        display: block;
+        width: max-content;
+        border-radius: 24px;
+        z-index: 2;
+        border: 2px solid #d7d7d7;
+
+    }
     /*—————————————————*/
     .big-menu {
         background-color: rgb(241 241 243);
@@ -425,6 +442,7 @@
         padding: 150px 100px;
     }
     .table {
+        /*margin-top: 100px;*/
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-row-gap: 40px;
