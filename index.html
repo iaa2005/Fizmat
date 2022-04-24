@@ -53,8 +53,8 @@
             </button>
         </form>
         <form action="https://www.tinkoff.ru/cf/6TSTEb7CjH4">
-            <button class="telegram-button button-sponsor" >
-                <a class="button-text" style="display: inline-flex; gap: 8px;">
+            <button class="telegram-button button-sponsor sponsor-button" >
+                <a class="button-text-sponsor" style="display: inline-flex; gap: 8px;">
                     <svg aria-hidden="true" viewBox="0 0 16 16" data-view-component="true" class="icon-sponsor">
                         <path fill-rule="evenodd" d="M4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.565 20.565 0 008 13.393a20.561 20.561 0 003.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.75.75 0 01-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5zM8 14.25l-.345.666-.002-.001-.006-.003-.018-.01a7.643 7.643 0 01-.31-.17 22.075 22.075 0 01-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.08 22.08 0 01-3.744 2.584l-.018.01-.006.003h-.002L8 14.25zm0 0l.345.666a.752.752 0 01-.69 0L8 14.25z"></path>
                     </svg>
@@ -216,12 +216,28 @@
 </body>
 <style>
     :root {
+        --right-arrow: none;
         --color-primary: #343742;
+        --color-primary-reverse: #f1f1f1;
+        --color-primary-bg: #ffffff;
+        --color-secondary-bg: #f1f1f1;
         --color-orange: #e84f08;
+        --color-shadow: #caced4;
+
+        --color-physics: #eef3ff;
+        --color-astro: #f6eeff;
+        --color-zftsh: #eefff8;
+        --color-physolimp: #ffeef5;
+        --color-iepho: #fff5ee;
+        --color-library: #feffee;
+        --color-coding: #eefcff;
+        --color-maths: #eefff1;
+        --color-practasks: #f6ffee;
+        --color-lprcup: #ffeef1;
     }
     body {
         margin: 0;
-        background-color: white;
+        background-color: var(--color-primary-bg);
         font-family: 'Montserrat', sans-serif;
     }
     a {
@@ -314,7 +330,18 @@
     }
     .button-text {
         font-family: 'Montserrat', sans-serif;
-        color: white;
+        color: var(--color-primary-reverse);
+        font-size: 18px;
+        margin: 11px;
+        transition: 0.3s;
+        font-weight: 500;
+    }
+    .sponsor-button:hover .button-text-sponsor {
+        color: #fa3688;
+    }
+    .button-text-sponsor {
+        font-family: 'Montserrat', sans-serif;
+        color: #f1f1f1;
         font-size: 18px;
         margin: 11px;
         transition: 0.3s;
@@ -348,6 +375,7 @@
         font-weight: 500;
     }
     .arrow-right {
+        filter: var(--right-arrow);
         height: 21px;
         margin-left: 5px;
         transition: 0.3s;
@@ -437,7 +465,7 @@
     }
     /*—————————————————*/
     .big-menu {
-        background-color: rgb(241 241 243);
+        background-color: var(--color-secondary-bg);
         background-size: 500px;
         padding: 150px 100px;
     }
@@ -457,12 +485,12 @@
         text-align: left;
         font-family: 'Montserrat', sans-serif;
         display: grid;
-        background-color: white;
+        background-color: var(--color-primary-bg);
         border-radius: 21px;
-        box-shadow: 0px 0px 20px 0px #efefef;
+        box-shadow: 0px 0px 20px 0px var(--color-secondary-bg);
     }
     .table-in:hover {
-        box-shadow: 0px 0px 20px 0px #d3d3d3;
+        box-shadow: 0px 0px 20px 0px var(--color-shadow);
         cursor: pointer;
     }
     .table-in:hover .arrow-right {
@@ -596,34 +624,34 @@
         padding-left: 30px;
     }
     .physics:hover {
-        background-color: #eef3ff;
+        background-color: var(--color-physics);
     }
     .astro:hover {
-        background-color: #f6eeff;
+        background-color: var(--color-astro);
     }
     .zftsh:hover {
-        background-color: #eefff8;
+        background-color: var(--color-zftsh);
     }
     .physolimp:hover {
-        background-color: #ffeef5;
+        background-color: var(--color-physolimp);
     }
     .iepho:hover {
-        background-color: #fff5ee;
+        background-color: var(--color-iepho);
     }
     .library:hover {
-        background-color: #feffee;
+        background-color: var(--color-library);
     }
     .coding:hover {
-        background-color: #eefcff;
+        background-color: var(--color-coding);
     }
     .maths:hover {
-        background-color: #eefff1;
+        background-color: var(--color-maths);
     }
     .practasks:hover {
-        background-color: #f6ffee;
+        background-color: var(--color-practasks);
     }
     .lprcup:hover {
-        background-color: #ffeef1;
+        background-color: var(--color-lprcup);
     }
     .sign-with-google {
         margin-left: auto;
@@ -739,7 +767,7 @@
     }
     .button-text {
         font-family: 'Montserrat', sans-serif;
-        color: white;
+        color: var(--color-primary-reverse);
         font-size: 18px;
         margin: 11px;
         transition: 0.3s;
@@ -915,6 +943,30 @@
         .about-school h1 {
             margin-top: 8px;
             font-size: 36px;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --right-arrow: brightness(10);
+            --color-primary: #f1f1f1;
+            --color-primary-reverse: #343742;
+            --color-primary-bg: #19191c;
+            --color-secondary-bg: #141417;
+            --color-orange: #e84f08;
+            --color-shadow: #0c0c0e;
+
+            --color-physics: #141a28;
+            --color-astro: #1e1328;
+            --color-zftsh: #142a20;
+            --color-physolimp: #28131c;
+            --color-iepho: #2d1f15;
+            --color-library: #222311;
+            --color-coding: #15282b;
+            --color-maths: #162b19;
+            --color-practasks: #202b14;
+            --color-lprcup: #32171b;
+
         }
     }
 </style>
