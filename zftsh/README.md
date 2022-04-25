@@ -2,6 +2,10 @@
 ## 10 класс 2021-2022
 - [10-Ф-1 — Изменение и сохранение импульса и энергии в механике](../zftsh-files/2021-2022/physics/10-klass/Izmeneniye_i_sokhraneniye_impulsa_i_energii_v_mekhanike.pdf) — [*Решение: неполное*](../zftsh-files/2021-2022/physics/10-klass/answers/Izmeneniye_i_sokhraneniye_impulsa_i_energii_v_mekhanike_ANSWERS.pdf)
 - [10-Ф-2 — Основы молекулярно-кинетической теории. Законы идеального газа](../zftsh-files/2021-2022/physics/10-klass/Osnovy_molekulyarno-kineticheskoy_teorii._Zakony_idealnogo_gaza.pdf) — [*Решение: полное*](../zftsh-files/2021-2022/physics/10-klass/answers/Osnovy_molekulyarno-kineticheskoy_teorii._Zakony_idealnogo_gaza_ANSWERS.pdf)
+- [10-Ф-3 — Закон сохранения энергии в тепловых процессах](../zftsh-files/2021-2022/physics/10-klass/Zakon_sokhraneniya_energii_v_teplovykh_protsessakh.pdf)
+- [10-Ф-4 — Электростатика](../zftsh-files/2021-2022/physics/10-klass/Elektrostatika.pdf)
+- [10-Ф-5 — Постоянный электрический ток](../zftsh-files/2021-2022/physics/10-klass/Postoyanny_elektrichesky_tok.pdf)
+- [10-Ф-6 — Магнитное поле](../zftsh-files/2021-2022/physics/10-klass/Magnitnoye_pole.pdf)
 
 ## 9 класс 2020-2021
 - [9-Ф-1 — Векторы в физике](../zftsh-files/2020-2021/physics/9-klass/Vektory_v_fizike.pdf) — [*Решение*](../zftsh-files/2020-2021/physics/9-klass/answers/Vektory_v_fizike_ANSWERS.pdf)
