@@ -6,6 +6,8 @@
 - [Глубокое обучение на Python](../coding-files/Глубокое_обучение_на_Python_(PDFDrive).pdf)
 
 ## Решенные задания по информатике на Python или C++
+- [🎉 FTL 10fm Линейный поиск 1](../coding-files/FTL-10fm-Линейный-поиск-1.zip)
+- [🎉 FTL 10fm Линейный поиск 2](../coding-files/FTL-10fm-Линейный-поиск-2.zip)
 - [FTL 10fm IF Classwork 10A (2021-11-09)](../coding-files/FTL-10fm-IF-Classwork-10A-(2021-11-09).zip)
 - [FTL 10fm IF simple](../coding-files/FTL-10fm-IF-simple.zip)
 - [FTL 10fm NO IF! simple tasks](../coding-files/FTL-10fm-NO-IF!-simple-tasks.zip)

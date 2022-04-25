@@ -1,6 +1,7 @@
 Официальный сайт — [iepho.ru](http://iepho.ru/). Здесь те эксперименты, которых нет на сайте:
 
-## **NEW** 2021
+## 2021
+
 ### Первый тур
 - [IEPhO 2021 T1 8A — Весы](../iepho-files/8-2_Vesy.pdf)
 - [IEPhO 2021 T1 8B — Вытекание](../iepho-files/8_1_Vytekanie.pdf)
