@@ -1,34 +1,69 @@
+:root {
+    --right-arrow: none;
+    --color-primary: #343742;
+    --color-primary-reverse: #f1f1f1;
+    --color-primary-bg: #ffffff;
+    --color-secondary-bg: #f1f1f1;
+    --color-orange: #e84f08;
+    --color-shadow: #caced4;
+
+    --color-physics: #eef3ff;
+    --color-astro: #f6eeff;
+    --color-zftsh: #eefff8;
+    --color-physolimp: #ffeef5;
+    --color-iepho: #fff5ee;
+    --color-library: #feffee;
+    --color-coding: #eefcff;
+    --color-maths: #eefff1;
+    --color-practasks: #f6ffee;
+    --color-lprcup: #ffeef1;
+
+    --link-hover: #00244d;
+
+
+    --physics-gradient: linear-gradient(90deg, #0d182f 15%, #2062a9 66%, #90b2e0);
+    --coding-gradient: linear-gradient(90deg, #0d212f 15%, #2090a9 66%, #90d7e0);
+    --astro-gradient: linear-gradient(90deg, #140d2f 15%, #3e20a9 66%, #ab90e0);
+    --zftsh-gradient: linear-gradient(90deg, #0a2223 15%, #156e6e 66%, #90e0d9);
+    --physolimp-gradient: linear-gradient(90deg, #2f0d11 15%, #a92089 66%, #e09090);
+    --lprcup-gradient: linear-gradient(90deg, #2f120d 15%, #a9203b 66%, #e0909c);
+    --iepho-gradient: linear-gradient(90deg, #2f120d 15%, #a94520 66%, #e0a890);
+    --library-gradient: linear-gradient(90deg, #2f230d 15%, #a97e20 66%, #e0d090);
+    --practasks-gradient: linear-gradient(90deg, #272f0d 15%, #7ba920 66%, #cfe090);
+    --maths-gradient: linear-gradient(90deg, #0d2f13 15%, #20a957 66%, #9fe090);
+}
+
 body {
     margin: 0;
-    background-color: white;
+    background-color: var(--color-primary-bg);
     font-family: 'Montserrat', sans-serif;
 }
 a {
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 20px;
-    color: #343742;
+    color: var(--color-primary);
     text-decoration: none;
 }
 h2 {
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #343742;
+    color: var(--color-primary);
     letter-spacing: 0.5px;
 }
 h1 {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #343742;
+    color: var(--color-primary);
     letter-spacing: 0.5px;
 }
 h3 {
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 20px;
-    color: #343742;
+    color: var(--color-primary);
     letter-spacing: 0.5px;
 }
 .title-header {
@@ -52,22 +87,22 @@ h3 {
     width: fit-content;
     border-radius: 50px;
     height: fit-content;
-    background-color: #343742;
-    border: solid 3px #343742;
+    background-color: var(--color-primary);
+    border: solid 3px var(--color-primary);
     display: inline-flex;
     transition: 0.3s;
 }
 .telegram-button:hover {
     background-color: rgba(0, 0, 0, 0);
-    border: solid 3px #343742;
+    border: solid 3px var(--color-primary);
     cursor: pointer;
 }
 .telegram-button:hover .button-text {
-    color: #343742;
+    color: var(--color-primary);
 }
 .button-text {
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: var(---color-primary-bg);
     font-size: 18px;
     margin: 11px;
     transition: 0.3s;
@@ -80,7 +115,7 @@ h3 {
     position: absolute;
 }
 .big-menu {
-    background-color: rgb(241 241 243);
+    background-color: var(--color-secondary-bg);
     background-size: 500px;
     padding: 150px 100px;
 }
@@ -124,7 +159,7 @@ h3 {
     font-size: 18px;
     text-align: justify;
     transition: 0.3s;
-    color: #343742;
+    color: var(--color-primary-reverse);
 }
 .h-table-2 {
     font-weight: 300;
@@ -157,7 +192,7 @@ footer {
     opacity: 1.0;
 }
 .iaa2005-link:hover {
-    color: #00244d;
+    color: var(--link-hover);
 }
 .iaa-logo {
     width: 55px;
@@ -169,7 +204,7 @@ svg {
     transition: 0.3s;
 }
 .github:hover svg{
-    fill: #343742;
+    fill: var(--color-primary);
     transition: 0.3s;
 }
 ul a, ol a {
@@ -177,7 +212,7 @@ ul a, ol a {
     text-decoration: none;
     font-weight: 300;
     line-height: 30px;
-    color: #343742;
+    color: var(--color-primary);
     transition: 0.1s;
 }
 ul li, ol li {
@@ -185,25 +220,25 @@ ul li, ol li {
     text-decoration: none;
     font-weight: 300;
     line-height: 21px;
-    color: #343742;
+    color: var(--color-primary);
 }
 .section p {
     font-size: 20px;
     text-decoration: none;
     line-height: 26px;
-    color: #343742;
+    color: var(--color-primary);
 }
 .section p a {
     font-size: 20px;
     text-decoration: none;
     line-height: 26px;
-    color: #343742;
+    color: var(--color-primary);
 }
 ul strong {
     font-size: 20px;
     line-height: 26px;
     text-decoration: none;
-    color: #343742;
+    color: var(--color-primary-reverse);
 }
 .like {
     margin-top: 25px;
@@ -312,34 +347,34 @@ ul a:any-link:hover, ol a:any-link:hover {
     color: #178aff;
 }
 .physics-gradient {
-    background: linear-gradient(90deg, #0d182f 15%, #2062a9 66%, #90b2e0);
+    background: var(--physics-gradient);
 }
 .coding-gradient {
-    background: linear-gradient(90deg, #0d212f 15%, #2090a9 66%, #90d7e0);
+    background: var(--coding-gradient);
 }
 .astro-gradient {
-    background: linear-gradient(90deg, #140d2f 15%, #3e20a9 66%, #ab90e0);
+    background: var(--astro-gradient);
 }
 .zftsh-gradient {
-    background: linear-gradient(90deg, #0a2223 15%, #156e6e 66%, #90e0d9);
+    background: var(--zftsh-gradient);
 }
 .physolimp-gradient {
-    background: linear-gradient(90deg, #2f0d11 15%, #a92089 66%, #e09090);
+    background: var(--physolimp-gradient);
 }
 .lprcup-gradient {
-    background: linear-gradient(90deg, #2f120d 15%, #a9203b 66%, #e0909c);
+    background: var(--lprcup-gradient);
 }
 .iepho-gradient {
-    background: linear-gradient(90deg, #2f120d 15%, #a94520 66%, #e0a890);
+    background: var(--iepho-gradient);
 }
 .library-gradient {
-    background: linear-gradient(90deg, #2f230d 15%, #a97e20 66%, #e0d090);
+    background: var(--library-gradient);
 }
 .practasks-gradient {
-    background: linear-gradient(90deg, #272f0d 15%, #7ba920 66%, #cfe090);
+    background: var(--practasks-gradient);
 }
 .maths-gradient {
-    background: linear-gradient(90deg, #0d2f13 15%, #20a957 66%, #9fe090);;
+    background: var(--maths-gradient);
 }
 
 .gradient-text {
@@ -347,7 +382,7 @@ ul a:any-link:hover, ol a:any-link:hover {
     font-size: min(10vw, 80px);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: #343742;
+    color: var(--color-primary-reverse);
     display: -webkit-inline-box;
 }
 .icon-sponsor {
@@ -382,7 +417,7 @@ ul a:any-link:hover, ol a:any-link:hover {
 }
 .button-text {
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: var(--color-primary-reverse);
     font-size: 18px;
     margin: 11px;
     transition: 0.3s;
@@ -461,7 +496,7 @@ ul a:any-link:hover, ol a:any-link:hover {
         font-size: 28px;
         font-weight: 700;
         margin-bottom: 20px;
-        color: #343742;
+        color: var(--color-primary);
         letter-spacing: 0.5px;
     }
     ul {
@@ -478,25 +513,25 @@ ul a:any-link:hover, ol a:any-link:hover {
         text-decoration: none;
         font-weight: 300;
         line-height: 20px;
-        color: #343742;
+        color: var(--color-primary);
     }
     .section p {
         font-size: 14px;
         text-decoration: none;
         line-height: 18px;
-        color: #343742;
+        color: var(--color-primary);
     }
     .section p a {
         font-size: 14px;
         text-decoration: none;
         line-height: 18px;
-        color: #343742;
+        color: var(--color-primary);
     }
     ul strong, ol strong {
         font-size: 14px;
         line-height: 18px;
         text-decoration: none;
-        color: #343742;
+        color: var(--color-primary);
     }
     .support-div {
         padding: 50px;
@@ -520,7 +555,7 @@ ul a:any-link:hover, ol a:any-link:hover {
     }
     ul li::before {
         content: "\2022";
-        color: #343742;
+        color: var(--color-primary);
         font-size: 40px;
         line-height: 16px;
         margin-right: 5px;
@@ -536,5 +571,41 @@ ul a:any-link:hover, ol a:any-link:hover {
         line-height: 16px;
         margin-right: 5px;
         display: -webkit-inline-box;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --right-arrow: brightness(10);
+        --color-primary: #f1f1f1;
+        --color-primary-reverse: #343742;
+        --color-primary-bg: #19191c;
+        --color-secondary-bg: #141417;
+        --color-orange: #e84f08;
+        --color-shadow: #0c0c0e;
+
+        --color-physics: #141a28;
+        --color-astro: #1e1328;
+        --color-zftsh: #142a20;
+        --color-physolimp: #28131c;
+        --color-iepho: #2d1f15;
+        --color-library: #222311;
+        --color-coding: #15282b;
+        --color-maths: #162b19;
+        --color-practasks: #202b14;
+        --color-lprcup: #32171b;
+
+        --link-hover: #77b1f1;
+
+        --physics-gradient: linear-gradient(90deg, #2062a9, #90b2e0);
+        --coding-gradient: linear-gradient(90deg, #2090a9, #90d7e0);
+        --astro-gradient: linear-gradient(90deg, #3e20a9, #ab90e0);
+        --zftsh-gradient: linear-gradient(90deg, #156e6e, #90e0d9);
+        --physolimp-gradient: linear-gradient(90deg, #a92089, #e09090);
+        --lprcup-gradient: linear-gradient(90deg, #a9203b, #e0909c);
+        --iepho-gradient: linear-gradient(90deg, #a94520, #e0a890);
+        --library-gradient: linear-gradient(90deg, #a97e20, #e0d090);
+        --practasks-gradient: linear-gradient(90deg, #7ba920, #cfe090);
+        --maths-gradient: linear-gradient(90deg, #20a957, #9fe090);
     }
 }
