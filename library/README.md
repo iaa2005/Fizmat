@@ -1,7 +1,3 @@
----
-title: Библиотека
----
-
 - [Физтех Регионам](https://os.mipt.ru/#/)
 - [ФизМат Банк](https://fizmatbank.ru)
 - [Журнал Квант](http://kvant.mccme.ru)
