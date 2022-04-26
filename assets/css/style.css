@@ -238,7 +238,7 @@ ul strong {
     font-size: 20px;
     line-height: 26px;
     text-decoration: none;
-    color: var(--color-primary-reverse);
+    color: var(--color-primary);
 }
 .like {
     margin-top: 25px;
