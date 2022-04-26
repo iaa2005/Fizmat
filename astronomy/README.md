@@ -11,6 +11,14 @@
 - [Обшая астрофизика К.А. Постнов, А.В. Засов 2011г.](../astronomy-files/astro-files/general_astrophysics.pdf)
 
 ## Астрономия
+- [Задача 10.5. Решение. К Сливу 2023 ЗЭ ВСОШ](../astronomy-files/astro-files/rsol10_5.pdf)
+- [Интегралы (для матаппарта)](../astronomy-files/astro-files/Integraly.pdf) 
+- [Движение тела в гравитационном поле](../astronomy-files/astro-files/Dvizhenie_tela_v_gravitatsionnom_pole.pdf)
+- [Давление излучения](../astronomy-files/astro-files/Davlenie_izluchenia_red.pdf)
+- [СПбАО 11 класс 2022](../astronomy-files/astro-files/Mezhnar_11_klass.pdf)
+- [СПбАО 10 класс 2022](../astronomy-files/astro-files/Mezhnar_10_klass.pdf)
+- [Скорость как поворот](../astronomy-files/astro-files/Skorost_kak_povorot.pdf)
+- [СПбАО Задчаи и решения 10 класс](../astronomy-files/astro-files/SPbAO_10_klass_2_1.pdf)
 - [Слив 2023 ЗЭ ВСОШ](../astronomy-files/astro-files/ЗЭ-ВСОШ-2023-Слив-1-апр.pdf)
 - [Астротурнир. 15 Дек. 2021](../astronomy-files/astro-files/астротурнир-15-дек-2021-все-лиги.pdf)
 - [Небесная механика. Ноябрь 21 2021. Взлет](../astronomy-files/astro-files/Небесная-механика-27-11-2021-Взлет.pdf)

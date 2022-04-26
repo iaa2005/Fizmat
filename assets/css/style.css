@@ -518,18 +518,18 @@ ul a:any-link:hover, ol a:any-link:hover {
     .section p {
         font-size: 14px;
         text-decoration: none;
-        line-height: 18px;
+        line-height: 20px;
         color: var(--color-primary);
     }
     .section p a {
         font-size: 14px;
         text-decoration: none;
-        line-height: 18px;
+        line-height: 20px;
         color: var(--color-primary);
     }
     ul strong, ol strong {
         font-size: 14px;
-        line-height: 18px;
+        line-height: 20px;
         text-decoration: none;
         color: var(--color-primary);
     }
@@ -566,11 +566,18 @@ ul a:any-link:hover, ol a:any-link:hover {
     }
     ul li ul li::before {
         content: "◦";
-        color: #343742;
+        color: var(--color-primary);
         font-size: 13px;
         line-height: 16px;
         margin-right: 5px;
         display: -webkit-inline-box;
+    }
+    ul li, ol li {
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: 300;
+        line-height: 20px;
+        color: var(--color-primary);
     }
 }
 
