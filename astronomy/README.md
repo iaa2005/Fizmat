@@ -1,28 +1,18 @@
-## Важные данные
-- [Все формулы по астрономии (made by @iaa2005)](../astronomy-files/astro-files/formulas-by-iaa2005.pdf)
-- [Астрадь](../astronomy-files/astro-files/astro-notebook.pdf)
-
-## Сурдин
-- [Сурдин В.Г. Галактики (Астрономия) — 2013](../astronomy-files/astro-files/78063_88fd4755d57baaca609b7084b61406c6.pdf)
-- [EPUB Формат для iBooks](https://share.ipfs.io/#/bafybeie2cnfxeuiytfhgrar7bp3teonyrjddqu43urf745gp2czzgej22m) — [Сурдин В.Г. Звёзды (Астрономия и астрофизика) — 2009](../astronomy-files/astro-files/Сурдин-В.Г.-Звёзды-(Астрономия-и-астрофизика)-2009.pdf)
-
-## Астрофизика
-- [Курс общей астрофизики К.А. Постнов, А.В. Засов 2005г.](../astronomy-files/astro-files/2005-postnov-zasov.pdf)
-- [Обшая астрофизика К.А. Постнов, А.В. Засов 2011г.](../astronomy-files/astro-files/general_astrophysics.pdf)
-
 ## Астрономия
-- [Задача 10.5. Решение. К Сливу 2023 ЗЭ ВСОШ](../astronomy-files/astro-files/rsol10_5.pdf)
+- [**Слив 2023 ЗЭ ВСОШ**](../astronomy-files/astro-files/ЗЭ-ВСОШ-2023-Слив-1-апр.pdf)
+  - [Задача 9.1. Решение](../astronomy-files/astro-files/rsol10_5.pdf)
+- СПбАО
+    - [СПбАО 11 класс 2022](../astronomy-files/astro-files/Mezhnar_11_klass.pdf)
+    - [СПбАО 10 класс 2022](../astronomy-files/astro-files/Mezhnar_10_klass.pdf)
+    - [СПбАО Задачи. Решения. 10 класс](../astronomy-files/astro-files/SPbAO_10_klass_2_1.pdf)
+    - [Задачи XXIV Санкт-Петербургской Астрономической олимпиады](https://dspace.spbu.ru/bitstream/11701/17285/1/СПбАО-2017.pdf)
 - [Интегралы (для матаппарта)](../astronomy-files/astro-files/Integraly.pdf) 
 - [Движение тела в гравитационном поле](../astronomy-files/astro-files/Dvizhenie_tela_v_gravitatsionnom_pole.pdf)
 - [Давление излучения](../astronomy-files/astro-files/Davlenie_izluchenia_red.pdf)
-- [СПбАО 11 класс 2022](../astronomy-files/astro-files/Mezhnar_11_klass.pdf)
-- [СПбАО 10 класс 2022](../astronomy-files/astro-files/Mezhnar_10_klass.pdf)
 - [Скорость как поворот](../astronomy-files/astro-files/Skorost_kak_povorot.pdf)
-- [СПбАО Задчаи и решения 10 класс](../astronomy-files/astro-files/SPbAO_10_klass_2_1.pdf)
-- [Слив 2023 ЗЭ ВСОШ](../astronomy-files/astro-files/ЗЭ-ВСОШ-2023-Слив-1-апр.pdf)
 - [Астротурнир. 15 Дек. 2021](../astronomy-files/astro-files/астротурнир-15-дек-2021-все-лиги.pdf)
 - [Небесная механика. Ноябрь 21 2021. Взлет](../astronomy-files/astro-files/Небесная-механика-27-11-2021-Взлет.pdf)
-- *Пробный регион. Ноябрь 2021*
+- **Пробный регион. Ноябрь 2021**
     - [Пробный регион разбалловка и ключи. Ноябрь 2021](../astronomy-files/astro-files/Пробный_регион_разбалловка_и_ключи_нояб_2021.pdf)
     - [Пробный регион. 10-11 класс. Ноябрь 2021](../astronomy-files/astro-files/Пробный-регион-10-11-класс-ноябрь-2021.pdf)
     - [Пробный регион. 9 класс. Ноябрь 2021](../astronomy-files/astro-files/Пробный-регион-9-класс-ноябрь-2021.pdf)
@@ -33,15 +23,30 @@
 - [Пробный регион 10-11 класс 2021 нояб](../astronomy-files/astro-files/Пробный-регион-10-11кл-2021-нояб.pdf)
 - Подборка задач по астрономии для подготовки к региону (9 частей) — [Архив](../astronomy-files/astro-files/podborka-zadach-dlya-podgotovki-regionu.zip)
 - [Справочные Данные из IAO](../astronomy-files/astro-files/Справочные-Данные-IAO.pdf)
-- *Другие задачи*
+- **Другие задачи**
     - [Спиральная галактика](../astronomy-files/astro-files/Спиральная-галактика.pdf)<!-- Муницип 2017-2018 Задача 6 10 класс -->
-- *Упражнения из сборника задач В.Б. Игнатьева*
+- **Задачи из сборника задач В.Б. Игнатьева**
     - [293. Марс и Антарес](../astronomy-files/astro-files/task293.pdf)
     - [1410. Задача про двойную звезду](../astronomy-files/astro-files/task1410.pdf)
     - [1447. Сфера Дайсона](../astronomy-files/astro-files/task1447.pdf)
 - [МОШ 2017-2018](https://mos.olimpiada.ru/upload/files/Archive_tasks_2013-%2E%2E%2E/2017-18/astr/tasks-astr-10-11-teor-final-17-8.pdf)
     - [Задачи с решениями](https://mosastro.olimpiada.ru/upload/files/mos2018/mosgor_2018_teor_10-11_solutions.pdf)
 - [Массы и размеры звезд](https://reader.lecta.rosuchebnik.ru/demo/7934-62/data/chapters/Chapter23/index.xhtml)
+
+## Важные данные
+
+- [Все формулы по астрономии (made by @iaa2005)](../astronomy-files/astro-files/formulas-by-iaa2005.pdf)
+- [Астрадь](../astronomy-files/astro-files/astro-notebook.pdf)
+
+## Сурдин
+
+- [Сурдин В.Г. Галактики (Астрономия) — 2013](../astronomy-files/astro-files/78063_88fd4755d57baaca609b7084b61406c6.pdf)
+- [EPUB Формат для iBooks](https://share.ipfs.io/#/bafybeie2cnfxeuiytfhgrar7bp3teonyrjddqu43urf745gp2czzgej22m) — [Сурдин В.Г. Звёзды (Астрономия и астрофизика) — 2009](../astronomy-files/astro-files/Сурдин-В.Г.-Звёзды-(Астрономия-и-астрофизика)-2009.pdf)
+
+## Астрофизика
+
+- [Курс общей астрофизики К.А. Постнов, А.В. Засов 2005г.](../astronomy-files/astro-files/2005-postnov-zasov.pdf)
+- [Обшая астрофизика К.А. Постнов, А.В. Засов 2011г.](../astronomy-files/astro-files/general_astrophysics.pdf)
 
 ## Дистанционная смена по астрономии 01-15/02/2022
 
