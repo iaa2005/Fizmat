@@ -1,6 +1,6 @@
 ## Астрономия
 - [**Слив 2023 ЗЭ ВСОШ**](../astronomy-files/astro-files/ЗЭ-ВСОШ-2023-Слив-1-апр.pdf)
-  - [Задача 9.1. Решение](../astronomy-files/astro-files/rsol10_5.pdf)
+    - [Задача 9.1. Решение](../astronomy-files/astro-files/rsol10_5.pdf)
 - СПбАО
     - [СПбАО 11 класс 2022](../astronomy-files/astro-files/Mezhnar_11_klass.pdf)
     - [СПбАО 10 класс 2022](../astronomy-files/astro-files/Mezhnar_10_klass.pdf)
