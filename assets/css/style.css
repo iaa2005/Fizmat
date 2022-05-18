@@ -35,7 +35,7 @@
 
 body {
     margin: 0;
-    background-color: var(--color-primary-bg);
+    background-color: var(--color-primary);
     font-family: 'Montserrat', sans-serif;
 }
 a {
