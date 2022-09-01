@@ -120,7 +120,7 @@
                         </div>
                     </table>
                 </div>
-                <button>
+                <button id="addOlympiadEvent">
                     <svg class="img-plus" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      width="459.325px" height="459.325px" viewBox="0 0 459.325 459.325" style="enable-background:new 0 0 459.325 459.325;"
                      xml:space="preserve"><g><path d="M459.319,229.668c0,22.201-17.992,40.193-40.205,40.193H269.85v149.271c0,22.207-17.998,40.199-40.196,40.193
@@ -131,6 +131,9 @@
                     </svg>
                     <a>Добавить олимпиаду</a>
                 </button>
+                <div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -181,13 +184,15 @@
 
             // <div class="tags-div"><div class="orange-tag"></div><div class="orange-tag">
             let calendar_html = ""
+            let k = 1
             let i = 1
             for (let week of weeks) {
                 for (let day of week) {
                     if (["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"].findIndex(element => { if (element === day) {return true;} }) !== -1 ) {
                         calendar_html += '<div class="td-cell"><a>' + day + '</a></div>'
-                    } else if (date.getFullYear() === new Date().getFullYear() && Number(day) === new Date().getDate() && date.getMonth() === new Date().getMonth()) {
+                    } else if (k == 1 && date.getFullYear() === new Date().getFullYear() && Number(day) === new Date().getDate() && date.getMonth() === new Date().getMonth()) {
                         calendar_html += '<button class="td-cell days-buttons" onclick=""><a class="today">' + day + '</a></button>'
+                        k = 0
                     } else if (1 !== Number(day) && i === 1) {
                         calendar_html += '<button class="td-cell days-buttons"><a class="prev-month-days">' + day + '</a></button>'
                     } else if (1 === Number(day) && i === 1) {
@@ -354,6 +359,11 @@
                 openedUploadFileWindow = !openedUploadFileWindow
             }
         }
+
+        document.getElementById("addOlympiadEvent").onclick = function () {
+
+        }
+
         setTimeout(function(){
             if (auth.currentUser == null) {
                 window.location.href = '/school';
