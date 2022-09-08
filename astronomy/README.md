@@ -37,6 +37,7 @@
 
 - [Все формулы по астрономии (made by @iaa2005)](../astronomy-files/astro-files/formulas-by-iaa2005.pdf)
 - [Астрадь](../astronomy-files/astro-files/astro-notebook.pdf)
+- [Задачи и упражнения по астрономии и астрофизике. Утешев](../astronomy-files/astro_smena_01_15_02_2022/Задачи_и_упражнения_по_астрономии_и_астрофизике_Утешев_книга.pdf)
 
 ## Сурдин
 
