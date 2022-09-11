@@ -6,14 +6,14 @@
 
 ## 10.1 Механика
 1. [Пружинный маятник](https://files.fizmat.ga/practasks-files/Пружинный_маятник.zip)
-2. Определение коэффициента скольжения — Скоро
+2. [Определение коэффициента скольжения](https://files.fizmat.ga/practasks-files/Определение_коэффициента_трения_скольжения.zip)
 3. [Баллистический маятник](https://files.fizmat.ga/practasks-files/Баллистический_маятник.zip)
 4. [Маятник Обербека](https://files.fizmat.ga/practasks-files/Обербекова_маятник.zip)
 5. [Соударение шаров](https://files.fizmat.ga/practasks-files/Соударение_шаров.zip)
-6. Колебания связанных импульсов — Скоро
-7. [Машина Атвуда](https://files.fizmat.ga/practasks-files/Машина_Атвуда.zip)
-8. [Физический и математический маятники](https://files.fizmat.ga/practasks-files/Математический_и_физический_маятник.zip)
-9. [Центростремительная сила](https://files.fizmat.ga/practasks-files/Центростремительная_сила.zip)
-10. Свободное падение — Скоро
-11. Физический маятник с переменным g — Скоро
+6. [Машина Атвуда](https://files.fizmat.ga/practasks-files/Машина_Атвуда.zip)
+7. [Физический и математический маятники](https://files.fizmat.ga/practasks-files/Математический_и_физический_маятник.zip)
+8. [Центростремительная сила](https://files.fizmat.ga/practasks-files/Центростремительная_сила.zip)
+9. [Свободное падение](https://files.fizmat.ga/practasks-files/Свободное_падение.zip)
+<!-- 11. Физический маятник с переменным g — Скоро -->
+<!-- 6. Колебания связанных импульсов — Скоро -->
 
