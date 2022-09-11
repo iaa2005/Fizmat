@@ -49,6 +49,36 @@
 - [Курс общей астрофизики К.А. Постнов, А.В. Засов 2005г.](https://files.fizmat.ga/astronomy-files/astro-files/2005-postnov-zasov.pdf)
 - [Обшая астрофизика К.А. Постнов, А.В. Засов 2011г.](https://files.fizmat.ga/astronomy-files/astro-files/general_astrophysics.pdf)
 
+## Задачи с УТС
+
+- [Q21S1D](https://files.fizmat.ga/astronomy-files/uts-files/Q21S1D.pdf)
+- [Q21S1T](https://files.fizmat.ga/astronomy-files/uts-files/Q21S1T.pdf)
+- [Q21S3D](https://files.fizmat.ga/astronomy-files/uts-files/Q21S3D.pdf)
+- [Q21S3T](https://files.fizmat.ga/astronomy-files/uts-files/Q21S3T.pdf)
+- [Q22S1D](https://files.fizmat.ga/astronomy-files/uts-files/Q22S1D.pdf)
+- [Q22S1T](https://files.fizmat.ga/astronomy-files/uts-files/Q22S1T.pdf)
+- [Q22S2D](https://files.fizmat.ga/astronomy-files/uts-files/Q22S2D.pdf)
+- [Q22S2T](https://files.fizmat.ga/astronomy-files/uts-files/Q22S2T.pdf)
+- [Q22S3D](https://files.fizmat.ga/astronomy-files/uts-files/Q22S3D.pdf)
+- [Q22S3T](https://files.fizmat.ga/astronomy-files/uts-files/Q22S3T.pdf)
+- [УТС Лето 2016 Прак](https://files.fizmat.ga/astronomy-files/uts-files/UTS_Leto_2016_Prak.pdf)
+- [УТС Лето 2016 Теор](https://files.fizmat.ga/astronomy-files/uts-files/UTS_Leto_2016_Teor.pdf)
+- [УТС Лето 2017 Прак](https://files.fizmat.ga/astronomy-files/uts-files/UTS_Leto_2017_Prak.pdf)
+- [УТС Лето 2017 Теор](https://files.fizmat.ga/astronomy-files/uts-files/UTS_Leto_2017_Teor.pdf)
+- [УТС Лето 2018 Прак](https://files.fizmat.ga/astronomy-files/uts-files/UTS_Leto_2018_Prak.pdf)
+- [УТС Лето 2018 Теор](https://files.fizmat.ga/astronomy-files/uts-files/UTS_Leto_2018_Teor.pdf)
+- [УТС Лето 2019 Прак](https://files.fizmat.ga/astronomy-files/uts-files/UTS_Leto_2019_Prak.pdf)
+- [УТС Лето 2019 Теор](https://files.fizmat.ga/astronomy-files/uts-files/UTS_Leto_2019_Teor.pdf)
+- [УТС Осень 2017 Прак](https://files.fizmat.ga/astronomy-files/uts-files/UTS_Osen_2017_Prak.pdf)
+- [УТС Осень 2017 Теор](https://files.fizmat.ga/astronomy-files/uts-files/UTS_Osen_2017_Teor.pdf)
+- [УТС Осень 2018 Прак](https://files.fizmat.ga/astronomy-files/uts-files/UTS_Osen_2018_Prak.pdf)
+- [УТС Осень 2018 Теор](https://files.fizmat.ga/astronomy-files/uts-files/UTS_Osen_2018_Teor.pdf)
+- [УТС Зима 2016 Прак](https://files.fizmat.ga/astronomy-files/uts-files/UTS_Zima_2016_Prak.pdf)
+- [УТС Зима 2016 Теор](https://files.fizmat.ga/astronomy-files/uts-files/UTS_Zima_2016_Teor.pdf)
+- [УТС Зима 2019 Прак](https://files.fizmat.ga/astronomy-files/uts-files/UTS_Zima_2019_Prak.pdf)
+- [УТС Зима 2019 Теор](https://files.fizmat.ga/astronomy-files/uts-files/UTS_Zima_2019_Teor.pdf)
+- [УТС Лето 2017 Теор Троллинг](https://files.fizmat.ga/astronomy-files/uts-files/UTS_Leto_2017_Troll-teor.pdf)
+
 ## Дистанционная смена по астрономии 01-15/02/2022
 
  - [Волновая оптика ИВ 01/02/2022](https://files.fizmat.ga/astronomy-files/astro_smena_01_15_02_2022/Волновая_оптика_ИВ_01_02_2022.pdf)
