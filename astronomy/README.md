@@ -49,7 +49,7 @@
 - [Курс общей астрофизики К.А. Постнов, А.В. Засов 2005г.](https://files.fizmat.ga/astronomy-files/astro-files/2005-postnov-zasov.pdf)
 - [Обшая астрофизика К.А. Постнов, А.В. Засов 2011г.](https://files.fizmat.ga/astronomy-files/astro-files/general_astrophysics.pdf)
 
-## Задачи с УТС
+## 🎉 Задачи с УТС
 
 - [Q21S1D](https://files.fizmat.ga/astronomy-files/uts-files/Q21S1D.pdf)
 - [Q21S1T](https://files.fizmat.ga/astronomy-files/uts-files/Q21S1T.pdf)
