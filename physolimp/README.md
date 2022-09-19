@@ -8,8 +8,8 @@
 - [Четвертая неделя](https://files.fizmat.ga/physolimp-files/Четвертая_неделя.pdf) — [Ответы](https://files.fizmat.ga/physolimp-files/Четвертая_неделя_(ответы).pdf)
 
 ## Задачи
-
-- 🎉 [Тренажер](https://files.fizmat.ga/physolimp-files/Тренажер.pdf)
+- [Нелинейный и неизвестный](https://files.fizmat.ga/physolimp-files/Нелинейный_и_неизвестный.pdf)
+- [Тренажер](https://files.fizmat.ga/physolimp-files/Тренажер.pdf) — [Решение: Тренажер](https://files.fizmat.ga/physolimp-files/Тренажер_(решение).pdf)
 - [Около ЕГЭ](https://files.fizmat.ga/physolimp-files/Около_ЕГЭ.pdf) — [Решение: Около ЕГЭ](https://files.fizmat.ga/physolimp-files/Ответы_около_ЕГЭ.pdf)
 - [Две звезды](https://files.fizmat.ga/physolimp-files/Две_звезды.pdf) — [Решение: Две звезды](https://files.fizmat.ga/physolimp-files/Две_звезды_(решение).pdf)
 - [Очень старая батарейка](https://files.fizmat.ga/physolimp-files/Очень_старая_батарейка.pdf) — [Решение: Очень старая батарейка](https://files.fizmat.ga/physolimp-files/Очень_старая_батарейка_(решение).pdf)

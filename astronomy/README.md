@@ -1,4 +1,6 @@
 ## Астрономия
+- 1ый Блиц тур 16.09: [9 класс](https://files.fizmat.ga/astronomy-files/astro-files/vbs23n1c09.pdf) — [10 класс](https://files.fizmat.ga/astronomy-files/astro-files/vbs23n1c10.pdf) — [11 класс](https://files.fizmat.ga/astronomy-files/astro-files/vbs23n1c11.pdf)
+- 2ой Блиц тур 16.09: [9 класс](https://files.fizmat.ga/astronomy-files/astro-files/vbs23n2c09.pdf) — [10 класс](https://files.fizmat.ga/astronomy-files/astro-files/vbs23n2c10.pdf) — [11 класс](https://files.fizmat.ga/astronomy-files/astro-files/vbs23n2c11.pdf)
 - [**Слив 2023 ЗЭ ВСОШ**](https://files.fizmat.ga/astronomy-files/astro-files/ЗЭ-ВСОШ-2023-Слив-1-апр.pdf)
     - [Задача 9.1. Решение](https://files.fizmat.ga/astronomy-files/astro-files/rsol10_5.pdf)
 - СПбАО
