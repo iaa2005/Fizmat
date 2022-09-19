@@ -228,11 +228,37 @@
         <h1 style="background-image: linear-gradient(71.18deg, rgb(0, 34, 255) -27.32%, rgb(0, 34, 255) -16.39%, rgb(81, 121, 254) -7.38%, rgb(165, 237, 182) 30.59%, rgb(250, 232, 90) 46.06%, rgb(253, 172, 62) 62.61%, rgb(255, 92, 0) 75.82%);
                    width: fit-content;
                    -webkit-background-clip: text;
+                   -webkit-text-fill-color: transparent; font-size: 48px;">О Fizmat'е</h1>
+<!--        <h1 style="width: fit-content; font-size: 48px;">О Fizmat'е</h1>-->
+        <div class="support-div-text-2">
+            <p class="h-table-2" style="width: auto">
+                Fizmat — образовательный сайт для получения знаний по физике, астрономии, математике и информатике.
+                Он дает быстрый доступ к книгам, задачникам, сайтам. В каждом разделе можно найти задачи из разных олимпиад,
+                а также эксклюзивные решения турниров, олимпиад и задач из mathus. Сайт дает доступ к LaTex исходникам
+                экспериментальных работ по физике из Физтех-лицея, задачам Колдунова Л.М. из «Кубка ЛФИ» и Жигара из А.Н. «Physolimp».
+            </p>
+            <p class="h-table-2" style="width: auto">
+                Fizmat создан в 2021 году учеником <a style="color: #4a4aff" href="https://anoo.ftl.name">ФТЛ</a>
+                <a style="color: #4a4aff" href="https://iaa2005.github.io">@iaa2005</a> как эксперимент: смогут ли ученики с помощью
+                Fizmat.ga быстро получать информацию, скачивать книги и просматривать решения задач по разным
+                предметам? И Fizmat смог выполнить свои задачи. Теперь главная цель — поддерживать сайт,
+                дополняя новыми работами, «праками», архивами и олимпиадами, и конечно, доносить важную информацию
+                ученикам по всей стране.
+            </p>
+        </div>
+    </div>
+    <!--    <img class="support-div-image" src="assets/images/image_processing20200608-19060-rxvw3n.png">-->
+    <!--    <img class="support-div-image" src="assets/images/06f1438a27e15ca0af49e6de4fd8b499.png">-->
+</div>
+<div class="support-div">
+    <div class="support-div-text">
+        <h1 style="background-image: linear-gradient(71.18deg, rgb(0, 34, 255) -27.32%, rgb(0, 34, 255) -16.39%, rgb(81, 121, 254) -7.38%, rgb(165, 237, 182) 30.59%, rgb(250, 232, 90) 46.06%, rgb(253, 172, 62) 62.61%, rgb(255, 92, 0) 75.82%);
+                   width: fit-content;
+                   -webkit-background-clip: text;
                    -webkit-text-fill-color: transparent; font-size: 48px;">Cделайте вклад в Fizmat</h1>
         <a class="h-table-2">Поддержите проект своими знаниями. Если есть какие-то файлы: олимпиадные задачи или их решения, практические работы по физике или астрономии — присылайте в telegram <strong style="font-weight: 500">@iaa2005</strong> или на почту: <strong style="font-weight: 500" > marsee3015@gmail.com</strong>. Мы будем благодарны.</a>
     </div>
 <!--    <img class="support-div-image" src="assets/images/image_processing20200608-19060-rxvw3n.png">-->
-
     <img class="support-div-image" src="assets/images/06f1438a27e15ca0af49e6de4fd8b499.png">
 </div>
 <div class="logos-grey">
@@ -289,6 +315,14 @@
         margin-bottom: 20px;
         color: var(--color-primary);
         text-decoration: none;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        color: var(--color-primary);
+        text-decoration: none;
+        text-align: justify;
     }
     h2 {
         font-size: 26px;
@@ -725,6 +759,11 @@
         margin-top: auto;
         margin-bottom: auto;
     }
+    .support-div-text-2 {
+        width: auto;
+        display: inline-flex;
+        gap: 20px;
+    }
     .support-div-image {
         margin-top: auto;
         margin-bottom: auto;
@@ -999,6 +1038,9 @@
         }
         .logos-grey {
             display: none;
+        }
+        .support-div-text-2 {
+            display: block;
         }
     }
 
