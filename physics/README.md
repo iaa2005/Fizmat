@@ -1,3 +1,4 @@
+- 🎉 [Эффект Холла. (la latex)](https://files.fizmat.ga/physics-files/mathus-halleffect-1-20.09.22.pdf)
 - [Сила Лоренца. Часть 2. (la latex)](https://files.fizmat.ga/physics-files/сила-лоренца-mathus-26.04.22-часть-2.pdf)
 - [Сила Лоренца. (la latex)](https://files.fizmat.ga/physics-files/сила-лоренца-22.04.22.pdf)
 - [Сила Ампера. Часть 3. Эксклюзив. (la latex)](https://files.fizmat.ga/physics-files/сила-ампера-mathus-20.04.22-часть-3-exclusive.pdf)

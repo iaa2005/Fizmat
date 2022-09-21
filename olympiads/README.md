@@ -1,3 +1,2 @@
 [Ссылка 🔗](https://docs.google.com/spreadsheets/d/151K1Bev0mF5hoo2BL43-hKZamSoPqvrnk58ZWkMoLu8)
-
 <iframe style="border: none; width: 100%; height: 100vh; border-radius: 15px; overflow: hidden;" src="https://docs.google.com/spreadsheets/d/151K1Bev0mF5hoo2BL43-hKZamSoPqvrnk58ZWkMoLu8"></iframe>
