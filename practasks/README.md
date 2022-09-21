@@ -2,7 +2,7 @@
 - [Учет погрешности на эксперименте](https://files.fizmat.ga/practasks-files/Учет_погрешности_на_эксперименте.pdf)
 - [Обработка результатов эксперимента](https://files.fizmat.ga/practasks-files/Обработка_результатов_эксперимента.pdf)
 - [Образец отчета](https://files.fizmat.ga/practasks-files/0._Образец_отчета.pdf)
-- [Памятка юного экспериментатора](../library-files/pamiat.pdf)
+- [Памятка юного экспериментатора](https://files.fizmat.ga/library-files/pamiat.pdf)
 
 ## 10.1 Механика
 1. [Пружинный маятник](https://files.fizmat.ga/practasks-files/Пружинный_маятник.zip)
