@@ -1,4 +1,5 @@
 ## Задачи
+- 🎉 [Воздушный шар](https://files.fizmat.ga/physics-files/mathus-vosh-23.09.22.pdf)
 - [Эффект Холла. Часть 2](https://files.fizmat.ga/physics-files/mathus-halleffect-2-20.09.22.pdf)
 - [Эффект Холла](https://files.fizmat.ga/physics-files/mathus-halleffect-1-20.09.22.pdf)
 - [Сила Лоренца. Часть 2](https://files.fizmat.ga/physics-files/сила-лоренца-mathus-26.04.22-часть-2.pdf)
