@@ -3,6 +3,7 @@
 - [Обработка результатов эксперимента](https://files.fizmat.ga/practasks-files/Обработка_результатов_эксперимента.pdf)
 - [Образец отчета](https://files.fizmat.ga/practasks-files/0._Образец_отчета.pdf)
 - [Памятка юного экспериментатора](https://files.fizmat.ga/library-files/pamiat.pdf)
+- [Работа с Pgfplots в LaTeX'е](https://files.fizmat.ga/practasks-files/pgfplots.pdf)
 
 ## 10.1 Механика
 1. [Пружинный маятник](https://files.fizmat.ga/practasks-files/Пружинный_маятник.zip)

@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Fizmat | Аккаунт</title>
+    <title>Fizmat | School</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,14 +55,15 @@
     </div>
     <div class="dashboard-btwn">
         <div class="db-menu">
-            <a class="db-menu-li" id="menu-storage">Хранилище</a>
-            <a class="db-menu-li" id="menu-my-files">Мои файлы</a>
+            <a class="db-menu-li" id="menu-olympiads">Олимпиады</a>
             <a class="db-menu-li" id="menu-my-olymps">Мои олимпиады</a>
+            <a class="db-menu-li" id="menu-my-files">Мои файлы</a>
             <a class="db-menu-li" id="menu-account">Аккаунт</a>
         </div>
         <div class="db-canvas">
-            <div class="db-canvas-block db-canvas-storage not-display" id="storage">
-                <h1>Хранилище</h1>
+            <div class="db-canvas-block db-canvas-olympiads not-display" id="olympiads">
+                <h1>Олимпиады</h1>
+                <iframe style="border: none; width: 100%; height: 100vh; border-radius: 15px; overflow: hidden; margin-top: 20px" src="https://docs.google.com/spreadsheets/d/151K1Bev0mF5hoo2BL43-hKZamSoPqvrnk58ZWkMoLu8"></iframe>
             </div>
             <div class="db-canvas-block db-canvas-account not-display" id="account">
                 <h1>Аккаунт</h1>
@@ -131,9 +132,6 @@
                     </svg>
                     <a>Добавить олимпиаду</a>
                 </button>
-                <div>
-
-                </div>
             </div>
         </div>
     </div>
@@ -297,52 +295,52 @@
             })
         }
 
-        document.getElementById("storage").classList.remove("not-display")
-        document.getElementById("menu-storage").classList.add("db-menu-li-selected")
+        document.getElementById("olympiads").classList.remove("not-display")
+        document.getElementById("menu-olympiads").classList.add("db-menu-li-selected")
 
         document.getElementById("menu-account").onclick = function () {
-            document.getElementById("storage").classList.add("not-display")
+            document.getElementById("olympiads").classList.add("not-display")
             document.getElementById("my-files").classList.add("not-display")
             document.getElementById("my-olymps").classList.add("not-display")
             document.getElementById("account").classList.remove("not-display")
 
-            document.getElementById("menu-storage").classList.remove("db-menu-li-selected")
+            document.getElementById("menu-olympiads").classList.remove("db-menu-li-selected")
             document.getElementById("menu-my-files").classList.remove("db-menu-li-selected")
             document.getElementById("menu-my-olymps").classList.remove("db-menu-li-selected")
             document.getElementById("menu-account").classList.add("db-menu-li-selected")
         }
 
-        document.getElementById("menu-storage").onclick = function () {
-            document.getElementById("storage").classList.remove("not-display")
+        document.getElementById("menu-olympiads").onclick = function () {
+            document.getElementById("olympiads").classList.remove("not-display")
             document.getElementById("my-files").classList.add("not-display")
             document.getElementById("my-olymps").classList.add("not-display")
             document.getElementById("account").classList.add("not-display")
 
-            document.getElementById("menu-storage").classList.add("db-menu-li-selected")
+            document.getElementById("menu-olympiads").classList.add("db-menu-li-selected")
             document.getElementById("menu-my-files").classList.remove("db-menu-li-selected")
             document.getElementById("menu-my-olymps").classList.remove("db-menu-li-selected")
             document.getElementById("menu-account").classList.remove("db-menu-li-selected")
         }
 
         document.getElementById("menu-my-files").onclick = function () {
-            document.getElementById("storage").classList.add("not-display")
+            document.getElementById("olympiads").classList.add("not-display")
             document.getElementById("my-files").classList.remove("not-display")
             document.getElementById("my-olymps").classList.add("not-display")
             document.getElementById("account").classList.add("not-display")
 
-            document.getElementById("menu-storage").classList.remove("db-menu-li-selected")
+            document.getElementById("menu-olympiads").classList.remove("db-menu-li-selected")
             document.getElementById("menu-my-files").classList.add("db-menu-li-selected")
             document.getElementById("menu-my-olymps").classList.remove("db-menu-li-selected")
             document.getElementById("menu-account").classList.remove("db-menu-li-selected")
         }
 
         document.getElementById("menu-my-olymps").onclick = function () {
-            document.getElementById("storage").classList.add("not-display")
+            document.getElementById("olympiads").classList.add("not-display")
             document.getElementById("my-files").classList.add("not-display")
             document.getElementById("my-olymps").classList.remove("not-display")
             document.getElementById("account").classList.add("not-display")
 
-            document.getElementById("menu-storage").classList.remove("db-menu-li-selected")
+            document.getElementById("menu-olympiads").classList.remove("db-menu-li-selected")
             document.getElementById("menu-my-files").classList.remove("db-menu-li-selected")
             document.getElementById("menu-my-olymps").classList.add("db-menu-li-selected")
             document.getElementById("menu-account").classList.remove("db-menu-li-selected")
@@ -421,22 +419,25 @@
         color: #0069d9;
     }
     .td-cell {
-        display: block;
-        width: 25px;
-        height: 25px;
-        /*background-color: rgb(241 241 243);*/
-        border-radius: 70px;
+        display: grid;
+        width: auto;
+        /* height: 75px; */
+        /* background-color: rgb(241 241 243); */
+        border-radius: 0px;
         padding: 10px;
-        text-align: -webkit-center;
+        /* text-align: -webkit-center; */
+        justify-content: end;
+        border: 1px solid #ececec
     }
     .calendar-weeks {
-        grid-gap: 10px;
+        grid-gap: 0px;
         display: grid;
         grid-template-columns: repeat(7, 1fr);
     }
     .calendar {
         margin-top: 20px;
-        width: fit-content;
+        width: auto;
+        max-width: 1024px;
         height: fit-content;
         border-radius: 15px;
         background-color: white;
@@ -584,15 +585,19 @@
         width: -webkit-fill-available;
     }
     .days-buttons {
+        display: grid;
         transition: 0.1s ease-in;
-        width: 50px;
-        height: 50px;
+        /*width: 120px;*/
+        width: auto;
+        height: 100px;
         margin: 0;
-        border-radius: 50px;
+        /*border-radius: 50px;*/
         padding: 10px;
         background-color: white;
         color: #343742;
-        border: none;
+        /*border: none;*/
+        align-items: start;
+        justify-content: end;
     }
     .days-buttons:hover {
         color: #343742;
@@ -683,11 +688,12 @@
         font-weight: 700;
     }
     .db-canvas-block {
-        height: -webkit-fill-available;
+        height: -webkit-fit-content;
         width: -webkit-fill-available;
         position: relative;
         padding: 45px;
         padding-top: 40px;
+        min-height: 100vh;
     }
     .db-canvas-account {
         z-index: 2;
@@ -695,7 +701,7 @@
     .db-canvas-my-files {
         z-index: 3;
     }
-    .db-canvas-storage {
+    .db-canvas-olympiads {
         z-index: 4;
     }
     .db-canvas-my-olymps {

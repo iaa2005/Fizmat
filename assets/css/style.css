@@ -33,7 +33,7 @@
     --practasks-gradient: linear-gradient(90deg, #272f0d 15%, #7ba920 66%, #cfe090);
     --maths-gradient: linear-gradient(90deg, #0d2f13 15%, #20a957 66%, #9fe090);
     --olympiads-gradient: linear-gradient(71.18deg, rgb(0, 34, 255) -27.32%, rgb(0, 34, 255) -16.39%, rgb(81, 121, 254) -7.38%, rgb(165, 237, 182) 30.59%, rgb(250, 232, 90) 46.06%, rgb(253, 172, 62) 62.61%, rgb(255, 92, 0) 75.82%);
-
+    --international-gradient: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
 }
 
 body {
@@ -386,6 +386,9 @@ ul a:any-link:hover, ol a:any-link:hover {
 .olympiads-gradient {
     background: var(--olympiads-gradient);
 }
+.international-gradient {
+    background: var(--international-gradient);
+}
 
 .gradient-text {
     margin-top: 0px;
@@ -626,6 +629,6 @@ ul a:any-link:hover, ol a:any-link:hover {
         --practasks-gradient: linear-gradient(90deg, #7ba920, #cfe090);
         --maths-gradient: linear-gradient(90deg, #20a957, #9fe090);
         --olympiads-gradient: linear-gradient(71.18deg, rgb(0, 34, 255) -27.32%, rgb(0, 34, 255) -16.39%, rgb(81, 121, 254) -7.38%, rgb(165, 237, 182) 30.59%, rgb(250, 232, 90) 46.06%, rgb(253, 172, 62) 62.61%, rgb(255, 92, 0) 75.82%);
-
+        --international-gradient: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
     }
 }
