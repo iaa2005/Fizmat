@@ -27,8 +27,8 @@
 - [IOAA 2017 Thailand — TH Problems & Solution](https://files.fizmat.ga/international-files/IOAA/IOAA-2017-TH-solution.pdf)
 - [IOAA 2018 China — DA Problems & Solution](https://files.fizmat.ga/international-files/IOAA/IOAA-2018-DA-solution.pdf)
 - [IOAA 2018 China — TH Problems & Solution](https://files.fizmat.ga/international-files/IOAA/IOAA-2018-TH-solution.pdf)
-- [IOAA 2019 Hungary — DA Problems & Solution](https://files.fizmat.ga/international-files/IOAA/IOAA-2019-DA-solution.pdf)
-- [IOAA 2019 Hungary — TH Problems & Solution](https://files.fizmat.ga/international-files/IOAA/IOAA-2019-TH-solution.pdf)
+- [IOAA 2019 Hungary — DA Problems & Solution](https://github.com/iaa2005/fizmat-files/raw/main/international-files/IOAA/IOAA-2019-DA-solution.pdf)
+- [IOAA 2019 Hungary — TH Problems & Solution](https://github.com/iaa2005/fizmat-files/raw/main/international-files/IOAA/IOAA-2019-TH-solution.pdf)
 
 # Books
 - [IOAA 2007-2012 Problem Solutions Book](https://files.fizmat.ga/international-files/IOAA/IOAA-2007-2012-Problem-Solutions-Book.pdf)
