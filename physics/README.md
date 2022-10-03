@@ -1,8 +1,8 @@
 ## Задачи
-- 🎉 [Газ и пружина](https://files.fizmat.ga/physics-files/mathus-gaspru-23.09.22.pdf)
-- 🎈 [Воздушный шар](https://files.fizmat.ga/physics-files/mathus-vosh-23.09.22.pdf)
+- [Газ и пружина](https://files.fizmat.ga/physics-files/mathus-gaspru-23.09.22.pdf)
+- [Воздушный шар](https://files.fizmat.ga/physics-files/mathus-vosh-23.09.22.pdf)
 - [Движение проводников в магнитном поле](https://files.fizmat.ga/physics-files/Движение_проводников_в_магнитном_поле.pdf)
-- 👌 [Эффект Холла. Часть 3](https://files.fizmat.ga/physics-files/mathus-halleffect-3-27.09.22.pdf)
+- [Эффект Холла. Часть 3](https://files.fizmat.ga/physics-files/mathus-halleffect-3-27.09.22.pdf)
 - [Эффект Холла. Часть 2](https://files.fizmat.ga/physics-files/mathus-halleffect-2-20.09.22.pdf)
 - [Эффект Холла](https://files.fizmat.ga/physics-files/mathus-halleffect-1-20.09.22.pdf)
 - [Сила Лоренца. Часть 2](https://files.fizmat.ga/physics-files/сила-лоренца-mathus-26.04.22-часть-2.pdf)
