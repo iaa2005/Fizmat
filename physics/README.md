@@ -1,4 +1,5 @@
 ## Задачи
+- 🎉 [Уравнение колебаний №1](https://files.fizmat.ga/physics-files/mathus-urkol1-07.10.22.pdf)
 - [Газ и пружина](https://files.fizmat.ga/physics-files/mathus-gaspru-23.09.22.pdf)
 - [Воздушный шар](https://files.fizmat.ga/physics-files/mathus-vosh-23.09.22.pdf)
 - [Движение проводников в магнитном поле](https://files.fizmat.ga/physics-files/Движение_проводников_в_магнитном_поле.pdf)
