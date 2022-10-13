@@ -212,18 +212,18 @@ svg {
     transition: 0.3s;
 }
 ul a, ol a {
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     font-weight: 300;
-    line-height: 30px;
+    line-height: 24px;
     color: var(--color-primary);
     transition: 0.1s;
 }
 ul li, ol li {
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     font-weight: 300;
-    line-height: 21px;
+    line-height: 24px;
     color: var(--color-primary);
 }
 .section p {
